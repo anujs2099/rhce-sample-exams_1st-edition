@@ -16,10 +16,7 @@
       - ipaddress ansible2 ansible2.example.com
       - ping the vms from one another
 2.  Install ansible by running the following scripts from the directory install-scripts/ in the order they are numbered and only on the nodes mentioned in the filename:
-    - after restoring a snapshot
-      - sudo subscription-manager attach
-      - sudo yum update -y
-      - sudo reboot
+    -
 3.  Management node "control" requirements:
     - bashrc requirements: Make sure to copy/paste the below lines in your ~/.bashrc and then source it:
     - vimrc requirements: Make sure to copy/paste the below lines in your ~/.vimrc and then source it
