@@ -1,13 +1,16 @@
 #!/bin/bash
 
 sudo -u ansible bash << EOF
+echo ""
 whoami
 
-ssh-keygen
+echo ""
+ssh-keygen -y
 
+echo ""
 ssh-copy-id ansible1.example.com
-read password
+
+echo ""
 ssh-copy-id ansible2.example.com
-read password
 
 EOF

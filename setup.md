@@ -15,17 +15,16 @@
       - ipaddress ansible1 ansible1.example.com
       - ipaddress ansible2 ansible2.example.com
       - ping the vms from one another
-2.  Install ansible by running the following scripts from the directory install-scripts/ in the order they are numbered and only on the nodes mentioned in the filename:
-      -	sudo ./0-all-nodes_after-restoring-snapshot.sh
-      -	sudo ./1-control-node_install-ansible.sh
-      -	sudo ./2-all-nodes_install-python.sh
-      -	sudo ./3-all-nodes_create-dedicated-user.sh
-      -	4-control-node_setup-passwordless-ssh.sh
-      -	5-all-nodes_setup-sudo.sh
-      -	6-all-nodes_setup-dns.sh
-      -	7-all-nodes_setup-hostnames.sh
+2.  Setup all nodes as student user by running the following scripts from the directory install-scripts/ in the order they are numbered and only on the nodes mentioned in the filename:
+    - sudo ./0-all-nodes_after-restoring-snapshot.sh
+    - sudo ./1-control-node_install-ansible.sh
+    - sudo ./2-all-nodes_install-python.sh
+    - sudo ./3-all-nodes_create-dedicated-user_setup-sudo.sh
+    - Provide password for ansible user twice in this step which is just password
+      - ./4-control-node_setup-passwordless-ssh.sh
 3.  Management node "control" requirements:
-    - bashrc requirements: Make sure to copy/paste the below lines in your ~/.bashrc and then source it:
+    - use ansible user from now on
+    - bashrc requirements: Make sure to copy/paste the below lines in your ~/.bashrc and then source it
     - vimrc requirements: Make sure to copy/paste the below lines in your ~/.vimrc and then source it
       - set expandtab
       - set tabstop=2
