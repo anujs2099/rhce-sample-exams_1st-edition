@@ -17,6 +17,8 @@ Static Inventory Files
 
 **Task 2**
 
+Ansible Configuration File
+
 -  Create an Ansible Configuration file as follows:
    - Project directory name is task2
    - Copy the Inventory file from the previous task into this directory
@@ -33,13 +35,26 @@ Static Inventory Files
 
 **Task 3**
 
+Ansible Configuration File - Order of Precendence
+
 -  Find out the order of precedence about the ansible configuration files using the man pages
 
 **Task 4**
 
+Using help regarding Modules
+
+-  Using appropriate command, list all the examples of using ping module
+-  Using appropriate command, find out the mandatory arguments for copy module
 
 **Task 5**
 
+Using Ad Hoc Commands
+
+-  Project directory name is task5
+-  Use the inventory file & configuration file from task2
+-  Using appropriate command, create a user named as lisa on all hosts  
+-  Rerun the same command again and you would notice that it will not recreate the user again (idempotency)
+-  Using appropriate command, verify that the user exists on all hosts without ssh'ing into the hosts
 
 **Task 6**
 
