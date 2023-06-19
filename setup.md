@@ -15,13 +15,13 @@
       - ipaddress ansible1 ansible1.example.com
       - ipaddress ansible2 ansible2.example.com
       - ping the vms from one another
-2.  Setup all nodes as student user by running the following scripts from the directory install-scripts/ in the order they are numbered and only on the nodes mentioned in the filename:
-    - sudo ./0-all-nodes_after-restoring-snapshot.sh
-    - sudo ./1-control-node_install-ansible.sh
-    - sudo ./2-all-nodes_install-python.sh
-    - sudo ./3-all-nodes_create-dedicated-user_setup-sudo.sh
+2.  Setup all nodes as student user by running the following scripts in the order they are numbered and only on the nodes mentioned in the filename:
+    - sudo sh install-scripts/0-all-nodes_after-restoring-snapshot.sh
+    - sudo sh install-scripts/1-control-node_install-ansible.sh
+    - sudo sh install-scripts/2-all-nodes_install-python.sh
+    - sudo sh install-scripts/3-all-nodes_create-dedicated-user_setup-sudo.sh
     - Provide password for ansible user twice in this step which is just password
-      - ./4-control-node_setup-passwordless-ssh.sh
+      - sh install-scripts/4-control-node_setup-passwordless-ssh.sh
 3.  Management node "control" requirements:
     - use ansible user from now on
     - bashrc requirements: Make sure to copy/paste the below lines in your ~/.bashrc and then source it
