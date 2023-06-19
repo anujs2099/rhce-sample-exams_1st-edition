@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir task2
+mkdir task2; cd task2/
 
 cp ../task1/inventory .
 

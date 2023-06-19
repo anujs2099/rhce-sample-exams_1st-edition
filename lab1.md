@@ -24,6 +24,7 @@ Static Inventory Files
    - Make sure it includes the following defaults:
      - inventory points to the correct inventory file
      - remote user is ansible
+     - the remote user should not ask for password
      - host key checking is false
    - Make sure to set the following privilege_escalation steps:
      - all playbooks and ansible commands should run as root through sudo
@@ -32,6 +33,7 @@ Static Inventory Files
 
 **Task 3**
 
+-  Find out the order of precedence about the ansible configuration files using the man pages
 
 **Task 4**
 
