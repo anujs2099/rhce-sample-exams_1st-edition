@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo ""
-sudo yum install python3 -y
+yum install python3 -y
