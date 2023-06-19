@@ -60,6 +60,16 @@ Using Ad Hoc Commands
 
 **Task 6**
 
+Using Essential modules
+
+-  Project directory name is task6
+-  Use the inventory file & configuration file from task2
+-  Using appropriate command, install the httpd service on all hosts
+-  Using appropriate command, start the httpd service on all hosts and enable it on reboot
+-  Using appropriate command, reboot ansible2.example.com and verify it has been rebooted
+-  Using appropriate command, list all the shell variables on all hosts
+-  Using appropriate command, modify the file /etc/motd to include only the words 'hello world'
+-  Remove python3 from the host ansible2.example & then assuming ansible user is not present, install python on the host
 
 **Task 7**
 
