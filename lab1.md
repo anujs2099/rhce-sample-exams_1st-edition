@@ -55,6 +55,8 @@ Using Ad Hoc Commands
 -  Using appropriate command, create a user named as lisa on all hosts  
 -  Rerun the same command again and you would notice that it will not recreate the user again (idempotency)
 -  Using appropriate command, verify that the user exists on all hosts without ssh'ing into the hosts
+-  Using apprpriate command, delete user lisa from all hosts
+-  Verify that the user has been deleted
 
 **Task 6**
 

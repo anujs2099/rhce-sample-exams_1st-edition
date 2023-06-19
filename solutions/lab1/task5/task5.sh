@@ -12,3 +12,7 @@ ansible all -m user -a "name=lisa"
 ansible all -m user -a "name=lisa"
 
 ansible all -m shell -a "id lisa"
+
+ansible all -m user -a "name=lisa state=absent"
+
+ansible all -m shell -a "id lisa"
