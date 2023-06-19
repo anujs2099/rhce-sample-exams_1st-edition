@@ -20,6 +20,7 @@ Static Inventory Files
 -  Create an Ansible Configuration file as follows:
    - Project directory name is task2
    - Copy the Inventory file from the previous task into this directory
+   - Configuration file name is ansible.cfg
    - Make sure it includes the following defaults:
      - inventory points to the correct inventory file
      - remote user is ansible
@@ -27,6 +28,7 @@ Static Inventory Files
    - Make sure to set the following privilege_escalation steps:
      - all playbooks and ansible commands should run as root through sudo
      - it should not ask for the root password
+   - Make sure that the new ansible.cfg is being used
 
 **Task 3**
 
