@@ -73,9 +73,33 @@ Using Essential modules
 
 **Task 7**
 
+Working with Playbooks --> Write an Ansible Playbook as follows
+
+-  Project directory name is task7
+-  Use the inventory file & configuration file from task2
+-  It should have only one play which does the following
+   - Name the play as you wish
+   - Runs on ansible2.example.com
+   - First task should
+     - Install vsftpd
+   - Second task should
+     - Start up vsftpd service and make sure the service is automatically started on every reboot
+   - Third task should
+     - Create a readme file at /var/ftp/pub/README with the text "welcome to this FTP server"
+     - Make sure the file is read-only and can can be read by all users
+     - Make sure the file should only be overwritten on subsequent runs of the playbook if it is not present and it should not be overwritten if the contents of the source are different than the destination file
+-  Verify the syntax of the playbook before running it
+-  Check the output of the playbook without running it
+-  Run the playbook and verify that it worked
 
 **Task 8**
 
+Fix Syntax Errors in Playbooks --> Fix the Syntax Error in the vsftpd-err.yaml playbook
+
+-  Project directory name is task8
+-  Use the inventory file & configuration file from task2
+-  Playbook location is rhce-sample-exams_1st-edition/files/vsftpd-err.yaml
+-  Fix the issue with the playbook but do not run it
 
 **Task 9**
 
