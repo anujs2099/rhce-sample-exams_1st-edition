@@ -123,5 +123,9 @@ Writing Multiple-Play Playbooks
 
 **Task 10**
 
+Writing Undo Playbooks
 
-
+-  Project directory name is task10
+-  Use the inventory file & configuration file from task2
+-  All changes below should persist across reboots
+-  Write a playbook that will undo all modifications from task9
