@@ -119,7 +119,7 @@ Writing Multiple-Play Playbooks
    - Name is "test webserver access"
    - Host is localhost
    - Run this play as user ansible and not as user root
-   - Connect to the webserver on url http://ansible1.example.com and make sure it gives the expected output
+   - Connect to the webserver on url http://ansible1.example.com and make sure the task displays the output from the page
 
 **Task 10**
 
