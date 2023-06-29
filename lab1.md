@@ -103,6 +103,23 @@ Fix Syntax Errors in Playbooks --> Fix the Syntax Error in the vsftpd-err.yaml p
 
 **Task 9**
 
+Writing Multiple-Play Playbooks
+
+-  Project directory name is task9
+-  Use the inventory file & configuration file from task2
+-  All changes below should persist across reboots
+-  Play 1
+   - Name is "enable webserver"
+   - Host is ansible1.example.com
+   - Install httpd & firewalld packages
+   - The httpd package should have a index.html installed at /var/www/html/ with the contents "hello world"
+   - Start the httpd & firewalld services
+   - Open the http service through firewalld
+-  Play 2
+   - Name is "test webserver access"
+   - Host is localhost
+   - Run this play as user ansible and not as user root
+   - Connect to the webserver on url http://ansible1.example.com and make sure it gives the expected output
 
 **Task 10**
 
