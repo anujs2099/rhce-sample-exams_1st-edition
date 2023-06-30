@@ -1,9 +1,15 @@
 
 **Task 1** 
 
+Variables defined in playbook
+
+-  Project directory name is task1
+-  Use the inventory file & configuration file from lab1/task2
+-  Create a playbook that creates a user by the name lisa on all hosts using the name of the user as a variable within the playbook
 
 **Task 2**
 
+Working with Facts
 
 **Task 3**
 

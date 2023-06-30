@@ -1,0 +1,9 @@
+---
+- name: Create a user
+  hosts: all
+  vars:
+    user: lisa
+  tasks:
+  - name: Create user
+    user:
+  
