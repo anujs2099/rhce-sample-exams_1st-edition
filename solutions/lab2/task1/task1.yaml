@@ -6,4 +6,6 @@
   tasks:
   - name: Create user
     user:
+      name: lisa
+      shell: /bin/bash
   
