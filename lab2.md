@@ -11,7 +11,7 @@ Variables defined in playbook (Play scope)
 
 **Task 2**
 
-Variables defined in include files (Play scope)
+Variables defined in playbook (Play scope)
 
 -  Project directory name is task2
 -  Use the inventory file & configuration file from task1
@@ -53,9 +53,27 @@ Variables defined from inventory file which are assigned to a host group (Host s
 
 **Task 6**
 
+Variables defined using include files for hosts (Host scope)
+
+-  Project directory name is task6
+-  Use the inventory file & configuration file from task1
+-  Create a playbook as follows:
+   - using the host vars directory, define the user "larry" for ansible1.example.com
+   - using the host vars directory, define the user "marry" for ansible2.example.com
+   - make sure the user uses the shell /bin/bash
+   - make sure the user is not defined within the playbook or within the inventory
 
 **Task 7**
 
+Variables defined using include files for groups (Host scope)
+
+-  Project directory name is task7
+-  Use the inventory file & configuration file from task1
+-  Create a playbook as follows:
+   - create a new host group by the name "all" within the inventory including both ansible1.example.com & ansible2.example.com
+   - using the group vars directory, define the user "teddy" for the group "all"
+   - make sure the user uses the shell /bin/bash
+   - make sure the user is not defined within the playbook or within the inventory 
 
 **Task 8**
 

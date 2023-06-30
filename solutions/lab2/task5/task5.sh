@@ -6,6 +6,7 @@ cd task5/
 cp ../task1/inventory .
 cp ../task1/ansible.cfg .
 
+vi inventory
 vi task5.yaml
 ansible-doc user | grep '^='
 ansible-doc user | grep EXAMPLES -A3000 | less
