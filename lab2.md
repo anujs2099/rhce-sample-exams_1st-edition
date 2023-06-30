@@ -11,7 +11,14 @@ Variables defined in playbook
 
 **Task 2**
 
-Working with Facts
+Variables defined in include files
+
+-  Project directory name is task2
+-  Use the inventory file & configuration file from task1
+-  Create a playbook that creates a user by the name roger on all hosts as follows:
+   - using the variable file users.yaml located within the directory vars/ 
+   - roger is defined within this variable file users.yaml
+   - make sure the user uses the shell /bin/bash
 
 **Task 3**
 
