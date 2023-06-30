@@ -77,6 +77,22 @@ Variables defined using include files for groups (Host scope)
 
 **Task 8**
 
+Using Multi-valued variables 
+
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab2/task8
+-  Use the inventory file & configuration file from task1
+-  Create two playbooks as follows:
+   - playbook 1
+     - name is multi-list.yaml
+     - runs on ansible1.example.com
+     - uses vars/users-list
+     - prints the following messages:
+       - "User linda has homedirectory /home/linda and shell /bin/bash"
+       - "User lisa has homedirectory /home/lisa and shell /bin/bash"
+       - ...
+       - "the second item is {'username': 'lisa', 'homedir': '/home/lisa', 'shell': 'bin/bash'}"
+   - playbook 2
+     - name is multi-dictionary.yaml
 
 **Task 9**
 

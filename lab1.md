@@ -24,13 +24,13 @@ Ansible Configuration File
    - Copy the Inventory file from the previous task into this directory
    - Configuration file name is ansible.cfg
    - Make sure it includes the following defaults:
-     - inventory points to the correct inventory file
-     - remote user is ansible
-     - the remote user should not ask for password
-     - host key checking is false
+     - Inventory points to the correct inventory file
+     - Remote user is ansible
+     - The remote user should not ask for password
+     - Host key checking is false
    - Make sure to set the following privilege_escalation steps:
-     - all playbooks and ansible commands should run as root through sudo
-     - it should not ask for the root password
+     - All playbooks and ansible commands should run as root through sudo
+     - It should not ask for the root password
    - Make sure that the new ansible.cfg is being used
 
 **Task 3**
