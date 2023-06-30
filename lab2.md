@@ -31,6 +31,14 @@ Variables defined from command line (Global scope)
 
 **Task 4**
 
+Using Host Variables from inventory file (Host scope)
+
+-  Project directory name is task4
+-  Use the inventory file & configuration file from task1
+-  Create a playbook that runs on all hosts as follows:
+   - creates a user by the name king on ansible1.example.com using the name of the user as a variable within the inventory
+   - creates a user by the name queen on ansible2.example.com using the name of the user as a variable within the inventory
+   - make sure the user uses the shell /bin/bash
 
 **Task 5**
 
