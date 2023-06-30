@@ -1,7 +1,7 @@
 
 **Task 1** 
 
-Variables defined in playbook
+Variables defined in playbook (Play scope)
 
 -  Project directory name is task1
 -  Use the inventory file & configuration file from lab1/task2
@@ -11,7 +11,7 @@ Variables defined in playbook
 
 **Task 2**
 
-Variables defined in include files
+Variables defined in include files (Play scope)
 
 -  Project directory name is task2
 -  Use the inventory file & configuration file from task1
@@ -22,6 +22,12 @@ Variables defined in include files
 
 **Task 3**
 
+Variables defined from command line (Global scope)
+
+-  Project directory name is task3
+-  Use the inventory file & configuration file from task1
+-  Use the same playbook and vars/users.yaml file from task2 but this time create a new user by the name tom from the command line
+-  Do not modify the existing playbook/include file
 
 **Task 4**
 
