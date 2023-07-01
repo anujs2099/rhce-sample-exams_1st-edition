@@ -1,0 +1,6 @@
+---
+- name: Custom Facts example
+  hosts: all
+  tasks:
+  - name: Install custom facts file
+    copy:

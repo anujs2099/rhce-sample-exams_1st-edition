@@ -26,10 +26,15 @@ Working with Facts
 
 Creating Custom Facts
 
--  Project directory name is task2
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab3/task2/
 -  Use the inventory file & configuration file from lab1/task2
+-  Run an ansible ad-hoc command to display only the custom facts
 -  Write a playbook as follows:
-
+   - name is 
+   - runs on all hosts
+   - copy the custom fact file myfacts.fact to the hosts at appropriate location
+   - display only the custom facts
+   - install the package & start the service by referring to the custom fact
 
 **Task 3**
 
