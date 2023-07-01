@@ -109,6 +109,7 @@ Using Ansible Vault
    - create a ansible-vault encrypted file secret.yaml with the following variables:
      - username: nano
      - pwhash: password
+   - runs on all hosts
    - uses vars present within secret.yaml
    - creates the user using the contents of secret.yaml
 
