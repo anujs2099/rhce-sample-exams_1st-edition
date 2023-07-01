@@ -24,6 +24,12 @@ Working with Facts
 
 **Task 2**
 
+Creating Custom Facts
+
+-  Project directory name is task2
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+
 
 **Task 3**
 
