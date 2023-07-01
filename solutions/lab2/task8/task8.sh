@@ -12,8 +12,12 @@ vi multi-list.yaml
 ansible-doc debug | grep '^='
 ansible-doc debug | grep EXAMPLES -A3000 | less
 vi multi-list.yaml
-ansible-doc shell | grep '^='
-ansible-doc shell | grep EXAMPLES -A3000 | less
-vi multi-list.yaml
 ansible-playbook --syntax-check multi-list.yaml
 ansible-playbook multi-list.yaml
+
+vi multi-dictionary.yaml
+ansible-doc debug | grep '^='
+ansible-doc debug | grep EXAMPLES -A3000 | less
+vi multi-dictionary.yaml
+ansible-playbook --syntax-check multi-dictionary.yaml
+ansible-playbook multi-dictionary.yaml

@@ -96,7 +96,7 @@ Using Multi-valued variables
      - name is multi-dictionary.yaml
      - runs on ansible1.example.com
      - uses vars/users-dictionary
-     - prints the following messages:
+     - prints the following message:
        - "User linda has homedirectory /home/linda and shell /bin/bash"
 
 **Task 9**
