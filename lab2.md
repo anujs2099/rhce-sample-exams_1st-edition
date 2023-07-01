@@ -101,6 +101,16 @@ Using Multi-valued variables
 
 **Task 9**
 
+Using Ansible Vault
+
+-  Project directory name is task9
+-  Use the inventory file & configuration file from task1
+-  Create a playbook as follows:
+   - create a ansible-vault encrypted file secret.yaml with the following variables:
+     - username: nano
+     - pwhash: password
+   - uses vars present within secret.yaml
+   - creates the user using the contents of secret.yaml
 
 **Task 10**
 
