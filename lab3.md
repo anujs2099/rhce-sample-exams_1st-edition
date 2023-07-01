@@ -18,7 +18,7 @@ Working with Facts
      - "This host uses IP address 10.130.11.14"
 -  Disable the facts to be gathered as vars (By default this is set to True)
 -  Write a playbook as follows:
-   - copy ipfact.yaml as disablefact.yaml
+   - copy ipfact.yaml as disablefact.yaml and remove all references to ansible_facts variable
    - disable the fact gathering through the playbook
    - make sure the default "Gathering facts" task doesn't appear
 

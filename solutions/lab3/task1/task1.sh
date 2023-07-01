@@ -25,3 +25,12 @@ ansible-playbook facts.yaml | less
 vi ipfact.yaml
 ansible-playbook --syntax-check ipfact.yaml
 ansible-playbook ipfact.yaml
+
+cat /etc/ansible/ansible.cfg | grep -i _facts_
+vi ansible.cfg
+
+cp ipfact.yaml disablefact.yaml
+cat /etc/ansible/ansible.cfg | grep -i gather_facts
+vi disablefact.yaml
+ansible-playbook --syntax-check disablefact.yaml
+ansible-playbook disablefact.yaml
