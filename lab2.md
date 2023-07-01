@@ -91,8 +91,13 @@ Using Multi-valued variables
        - "User lisa has homedirectory /home/lisa and shell /bin/bash"
        - ...
        - "the second item is {'username': 'lisa', 'homedir': '/home/lisa', 'shell': 'bin/bash'}"
+     - use a loop or with_items
    - playbook 2
      - name is multi-dictionary.yaml
+     - runs on ansible1.example.com
+     - uses vars/users-dictionary
+     - prints the following messages:
+       - "User linda has homedirectory /home/linda and shell /bin/bash"
 
 **Task 9**
 
