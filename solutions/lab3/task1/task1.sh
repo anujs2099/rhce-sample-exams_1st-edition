@@ -8,12 +8,9 @@ cp ../../lab1/task2/ansible.cfg .
 
 ansible all -m setup
 
-vi task1.yaml
-ansible-doc user | grep '^='
-ansible-doc user | grep EXAMPLES -A3000 | less
-vi task1.yaml
-ansible-doc shell | grep '^='
-ansible-doc shell | grep EXAMPLES -A3000 | less
-vi task1.yaml
-ansible-playbook --syntax-check task1.yaml 
-ansible-playbook task1.yaml 
+vi facts.yaml
+ansible-doc debug | grep '^='
+ansible-doc debug | grep EXAMPLES -A3000 | less
+vi facts.yaml
+ansible-playbook --syntax-check facts.yaml 
+ansible-playbook facts.yaml 

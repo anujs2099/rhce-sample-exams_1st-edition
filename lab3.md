@@ -11,6 +11,11 @@ Working with Facts
    - runs on all hosts
    - prints all the ansible facts
    - cannot use the setup module
+-  Write a playbook as follows:
+   - name is ipfact.yaml
+   - runs on all hosts
+   - prints the following message where 10.130.11.14 is just an example ip address:
+     - "This host uses IP address 10.130.11.14"
 
 **Task 2**
 
