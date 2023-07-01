@@ -16,6 +16,11 @@ Working with Facts
    - runs on all hosts
    - prints the following message where 10.130.11.14 is just an example ip address:
      - "This host uses IP address 10.130.11.14"
+-  Disable the facts to be gathered as vars (By default this is set to True)
+-  Write a playbook as follows:
+   - copy ipfact.yaml as disablefact.yaml
+   - disable the fact gathering through the playbook
+   - make sure the default "Gathering facts" task doesn't appear
 
 **Task 2**
 
