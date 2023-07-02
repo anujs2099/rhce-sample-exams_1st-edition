@@ -34,9 +34,9 @@ Creating Custom Facts
    - uses two variables:
      - name of the facts directory as a variable
      - myfacts.fact filename as a variable
-   - copy the custom fact file myfacts.fact to the hosts at facts directory on the hosts
-   - display only the custom facts
+   - copy the custom fact file myfacts.fact to the hosts at facts directory
    - install the package & start the service by referring to the custom fact
+   - display only the custom facts
 -  Make sure all changes persist across reboots
 
 **Task 3**

@@ -28,7 +28,10 @@
       ls -ltr {{ host_dir }}
       echo ''
       systemctl status {{ ansible_facts.ansible_local.myfacts.localfacts.service }}
-    register: results
-  - name: Print results
+    register: verify
+  - name: Verify everything - Display results
     debug:
-      var: results
+      var: verify
+  - name: Gathering custom facts
+    debug:
+      var: ansible_facts.ansible_local
