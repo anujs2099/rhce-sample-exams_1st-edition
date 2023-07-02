@@ -64,9 +64,18 @@ Using Loops and Items - using hashes/dictionaries
    - uses the variable file my_users
    - create the users given in the file my_users with membership to the given secondary groups
    - ensure to use loop
+   - ensure to register the output of the loop and display it as a message but only display the stdout_lines
 
 **Task 5**
 
+Using Register Variables
+
+-  Project directory name is task5
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
+   - print out the message "passwd contains user lisa" only when the user lisa is found within the output of the command "cat /etc/passwd"
+   - do not run any other command than "cat /etc/passwd"
 
 **Task 6**
 
