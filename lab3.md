@@ -30,11 +30,14 @@ Creating Custom Facts
 -  Use the inventory file & configuration file from lab1/task2
 -  Run an ansible ad-hoc command to display only the custom facts
 -  Write a playbook as follows:
-   - name is 
    - runs on all hosts
-   - copy the custom fact file myfacts.fact to the hosts at appropriate location
+   - uses two variables:
+     - name of the facts directory as a variable
+     - myfacts.fact filename as a variable
+   - copy the custom fact file myfacts.fact to the hosts at facts directory on the hosts
    - display only the custom facts
    - install the package & start the service by referring to the custom fact
+-  Make sure all changes persist across reboots
 
 **Task 3**
 
