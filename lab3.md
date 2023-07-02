@@ -111,7 +111,7 @@ Combining Loops and Conditionals
 -  Write a playbook as follows:
    - runs on all hosts
    - run a linux command to check whether crond service is running or not
-   - restart sshd service if crond service is not running
+   - restart sshd service if crond service is running
 
 **Task 9**
 
