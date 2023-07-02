@@ -99,10 +99,19 @@ Testing Multiple Conditions
 -  Write a playbook as follows:
    - runs on all hosts
    - installs package httpd only when distribution is "RedHat" and free memory available is atleast 1512
-   - make sure to use a distribution independent module to install httpd
+   - make sure to use a distribution independent module to install httpd. It is okay if the httpd doesn't get installed if the conditions are not met
+   - use the command 'ansible all -m yum -a "name=httpd state=absent"' to uninstall httpd if already installed
 
 **Task 8**
 
+Combining Loops and Conditionals
+
+-  Project directory name is task8
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
+   - run a linux command to check whether crond service is running or not
+   - restart sshd service if crond service is not running
 
 **Task 9**
 
