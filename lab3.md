@@ -62,7 +62,7 @@ Using Loops and Items - using hashes/dictionaries
 -  Write a playbook as follows:
    - runs on all hosts
    - uses the variable file my_users
-   - create the users given in the file my_users with membership to their respective groups
+   - create the users given in the file my_users with membership to the given secondary groups
    - ensure to use loop
 
 **Task 5**
