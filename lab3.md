@@ -79,6 +79,14 @@ Using Register Variables
 
 **Task 6**
 
+Using when to Run Tasks Conditionally
+
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab3/task6/
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
+   - uses the variable file supported_distros
+   - installs httpd only when the ansible distribution matches supported distros
 
 **Task 7**
 
