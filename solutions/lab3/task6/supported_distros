@@ -1,3 +1,4 @@
 supported_distros:
+- RedHat
 - CentOS
 - Fedora

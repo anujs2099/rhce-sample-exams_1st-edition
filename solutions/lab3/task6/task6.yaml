@@ -1,14 +1,20 @@
 ---
-- name: Find user lisa in /etc/passwd
+- name: install httpd only when ansible distribution matches supported distros
   hosts: all
+  vars_files:
+  - supported_distros
   tasks:
-  - name: cat /etc/passwd
+  - name: install httpd on a condition
+    yum:
+      name: httpd
+      state: present
+    when: ansible_facts.distribution in supported_distros
+  - name: Verification
     shell: |
-      cat /etc/passwd
-    register: passwd_contents
-  - name: Print results
+      rpm -qa | grep -i httpd
+    register: verify
+  - name: Verification - print results
     debug:
-      msg: "passwd contains user lisa"
-    when: passwd_contents.stdout.find('lisa') != -1
-      
-
+      msg: 
+      - "{{ verify.stderr_lines }}"
+      - "{{ verify.stdout_lines }}"

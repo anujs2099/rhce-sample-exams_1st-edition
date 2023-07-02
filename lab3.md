@@ -85,11 +85,19 @@ Using when to Run Tasks Conditionally
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on all hosts
-   - uses the variable file supported_distros
+   - uses the variable file supported_distros. You can modify this file as needed
    - installs httpd only when the ansible distribution matches supported distros
+   - ensure that httpd is installed successfully as the hosts are using RedHat linux
+   - use the command 'ansible all -m yum -a "name=httpd state=absent"' to uninstall httpd if already installed
 
 **Task 7**
 
+Testing Multiple Conditions
+
+-  Project directory name is task7
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 8**
 
