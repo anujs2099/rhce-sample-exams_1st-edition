@@ -41,20 +41,29 @@ Creating Custom Facts
 
 **Task 3**
 
-Using Loops and Items
+Using Loops and Items - simple example
 
 -  Project directory name is task3
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on all hosts
-   - uses a variable "my_services" which has the following two values:
+   - uses a variable "my_services" which has the following values:
      - httpd
      - vsftpd
    - just install the above two packages without starting them
-   - ensure to loop through the above values
+   - ensure to use loop
 
 **Task 4**
 
+Using Loops and Items - using hashes/dictionaries 
+
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab3/task4/
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
+   - uses the variable file my_users
+   - create the users given in the file my_users with membership to their respective groups
+   - ensure to use loop
 
 **Task 5**
 
