@@ -98,6 +98,8 @@ Testing Multiple Conditions
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on all hosts
+   - installs package httpd only when distribution is "RedHat" and free memory available is atleast 1512
+   - make sure to use a distribution independent module to install httpd
 
 **Task 8**
 
