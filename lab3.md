@@ -108,6 +108,7 @@ Combining Loops and Conditionals
 
 -  Project directory name is task8
 -  Use the inventory file & configuration file from lab1/task2
+-  Stop crond service on ansible2.example.com
 -  Write a playbook as follows:
    - runs on all hosts
    - run a linux command to check whether crond service is running or not
@@ -115,6 +116,17 @@ Combining Loops and Conditionals
 
 **Task 9**
 
+Using Handlers
+
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab3/task9/
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
+   - installs latest version of httpd
+   - copies locally available index.html to /var/www/html/ directory
+     - notifies a handler "restart_web" which restarts httpd
+   - copies a non-existent file nothing.html to /var/www/html/ directory
+   - the handler would not trigger. Override the default playbook behavior to trigger the handler
 
 **Task 10**
 
