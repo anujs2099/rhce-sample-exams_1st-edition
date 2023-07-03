@@ -26,7 +26,12 @@ apropos ansible
 man ansible-playbook | grep -i handler
 vi task9.yaml
 ansible-playbook task9.yaml
+# Notice the handler ran
+ansible-playbook task9.yaml
+# Notice the handler did not run this time
 
 ## Note that handlers would not execute:
 # if any of the tasks fail (force with force_handlers: True)
 # if the task that triggers a handler gives ok (green) status meaning the task doesn't change anything
+
+## Handlers run when all tasks have run

@@ -131,4 +131,14 @@ Using Handlers - forcefully triggering handlers
 
 **Task 10**
 
+Using Blocks - simple usage
 
+-  Project directory name is task10
+-  Use the inventory file & configuration file from lab1/task2
+-  Remove httpd and /var/www/html/index.html if they are already installed using ansible commands
+-  Write a playbook as follows:
+   - runs on all hosts
+   - use a block task as follows:
+     - install httpd
+     - start httpd
+     - only run the block task when distribution is RedHat
