@@ -14,3 +14,9 @@ vi task5.yaml
 ansible-playbook --syntax-check task5.yaml
 ansible-playbook task5.yaml
 
+## Common File Modules
+# lineinfile
+# blockinfile
+# copy
+# fetch
+# file
