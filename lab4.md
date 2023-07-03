@@ -70,6 +70,16 @@ Using Modules to Manipulate Files
    - playbook name is file.yaml
    - runs on all hosts
    - create a file /tmp/removeme with owner 'ansible', mode '0640', selinux context type 'public_content_rw_t'
+-  Write a playbook as follows:
+   - playbook name is 
+   - runs on all hosts
+   - copies local /etc/hosts into /tmp/ on the hosts
+   - add the following lines to the newly copied /tmp/hosts:
+     - 192.168.4.110 host1.example.com
+     - 192.168.4.120 host2.example.com
+   - verify file checksum for /tmp/hosts with md5 algorithm
+   - print checksum results
+   - copy the /tmp/hosts from the hosts locally as my.hosts on ansible master
 
 **Task 6**
 
