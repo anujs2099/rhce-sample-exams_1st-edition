@@ -63,6 +63,12 @@ Using Task Control
 **Task 5**
 
 
+
+-  Project directory name is task5
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
+
 **Task 6**
 
 
