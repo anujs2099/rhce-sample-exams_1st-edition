@@ -18,7 +18,7 @@ Combining Tasks using Block, Rescue & Always
 
 **Task 2**
 
-
+Dealing with Failures
 
 -  Project directory name is task2
 -  Use the inventory file & configuration file from lab1/task2
