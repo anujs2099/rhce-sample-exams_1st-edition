@@ -71,7 +71,7 @@ Using Modules to Manipulate Files
    - runs on all hosts
    - create a file /tmp/removeme with owner 'ansible', mode '0640', selinux context type 'public_content_rw_t'
 -  Write a playbook as follows:
-   - playbook name is 
+   - playbook name is copy.yaml
    - runs on all hosts
    - copies local /etc/hosts into /tmp/ on the hosts
    - add the following lines to the newly copied /tmp/hosts:
