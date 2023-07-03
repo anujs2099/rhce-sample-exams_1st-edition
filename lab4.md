@@ -49,6 +49,15 @@ Managing Changed Status
 
 **Task 4**
 
+Using Task Control
+
+-  Project directory name is task4
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - install and run the mariadb database service
+   - it should install the mariadb-server as well as the python3-PyMySQL package
+   - it should only install on managed nodes that are using RHEL 8.0
+   - Only if the database service could be started successfully, the mysql_user module should be used to set the database root user password
 
 **Task 5**
 
