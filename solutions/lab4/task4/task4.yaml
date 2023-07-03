@@ -1,0 +1,26 @@
+---
+- name: Using Task Control
+  hosts: all
+  tasks:
+  - name: Install & Run
+    block:
+    - name: Install packages
+      yum: 
+        name:
+        - mariadb-server
+        - python3-PyMySQL
+        state: present
+    - name: Run mariadb-server
+      service: 
+        name: mariadb
+        state: started
+        enabled: true
+      notify: setup_database_root_password
+    when: "'RedHat' in ansible_facts.distribution and ansible_facts.distribution_version == '8.0'"
+  handlers:
+  - name: setup_database_root_password
+    mysql_user:
+      name: root
+      password: password
+      state: present
+
