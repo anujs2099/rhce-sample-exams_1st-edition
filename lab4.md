@@ -69,7 +69,7 @@ Using Modules to Manipulate Files
 -  Write a playbook as follows:
    - playbook name is file.yaml
    - runs on all hosts
-   - create a file /tmp/removeme with owner 'ansible', mode 0640, setype public_content_rw_t
+   - create a file /tmp/removeme with owner 'ansible', mode '0640', selinux context type 'public_content_rw_t'
 
 **Task 6**
 
