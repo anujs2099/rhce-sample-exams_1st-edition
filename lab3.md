@@ -138,7 +138,7 @@ Using Blocks - simple usage
 -  Remove httpd and /var/www/html/index.html if they are already installed using ansible commands
 -  Write a playbook as follows:
    - runs on all hosts
-   - use a block task as follows:
+   - use the following tasks within a block:
      - install httpd
      - start httpd
-     - only run the block task when distribution is RedHat
+   - only run the tasks within a block when distribution is RedHat
