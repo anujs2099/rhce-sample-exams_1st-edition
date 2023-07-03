@@ -14,9 +14,17 @@ Combining Tasks using Block, Rescue & Always
      - create the file /tmp/rescuefile
    - make sure the following task is always run:
      - write a message to logs saying "hello"
+   - ensure that the block task fails, rescue task runs, and always task always runs
 
 **Task 2**
 
+
+
+-  Project directory name is task2
+-  Use the inventory file & configuration file from lab1/task2
+-  Remove httpd and /var/www/html/index.html if they are already installed using ansible commands
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 3**
 
