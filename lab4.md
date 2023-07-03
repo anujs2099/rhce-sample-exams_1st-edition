@@ -44,7 +44,7 @@ Managing Changed Status
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on all hosts
-   - task1 checks local time by running 'date' command
+   - task1 checks local time by running 'date' command. Ensure that the task1 shows an 'ok' status instead of 'changed' status
    - task2 prints the standard output of task1
 
 **Task 4**
