@@ -79,7 +79,7 @@ Using Modules to Manipulate Files
      - 192.168.4.120 host2.example.com
    - verify file checksum for /tmp/hosts with md5 algorithm
    - print checksum results
-   - copy the /tmp/hosts from the hosts locally as my.hosts on ansible master
+   - copy the /tmp/hosts from the hosts locally as under my.hosts directory on ansible master in the format my.hosts/host/path/to/file
 
 **Task 6**
 
