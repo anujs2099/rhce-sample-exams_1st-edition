@@ -22,7 +22,6 @@ Dealing with Failures
 
 -  Project directory name is task2
 -  Use the inventory file & configuration file from lab1/task2
--  Remove httpd and /var/www/html/index.html if they are already installed using ansible commands
 -  Write a playbook as follows:
    - runs on all hosts
    - task1 runs a command "echo hello world", ignores the errors, register the output and fails when the word 'world' is found within this output
