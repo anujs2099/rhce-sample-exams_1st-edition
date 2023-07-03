@@ -25,5 +25,15 @@
     fetch:
       src: /tmp/hosts
       dest: my.hosts 
-   
+  - name: verify
+    shell: |
+      ls -ltr /tmp/hosts*
+      echo ''
+      cat /tmp/hosts 
+    register: verify
+  - name: verify - print results
+    debug:
+      msg:
+      - "{{ verify.stderr_lines }}"
+      - "{{ verify.stdout_lines }}"
   
