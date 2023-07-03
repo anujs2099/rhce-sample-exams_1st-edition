@@ -83,6 +83,12 @@ Using Modules to Manipulate Files
 
 **Task 6**
 
+Managing SELinux File Context
+
+-  Project directory name is task6
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 7**
 

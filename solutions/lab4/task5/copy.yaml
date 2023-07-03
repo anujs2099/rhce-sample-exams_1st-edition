@@ -12,6 +12,7 @@
       block: |
         192.168.4.110 host1.example.com
         192.168.4.120 host2.example.com
+      state: present
       backup: true
   - name: verify checksum
     stat:
