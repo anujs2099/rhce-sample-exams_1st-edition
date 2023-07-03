@@ -23,9 +23,14 @@ Dealing with Failures
 -  Project directory name is task2
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
+   - name of the playbook is failure1.yaml
    - runs on all hosts
    - task1 runs a command "echo hello world", ignores the errors, register the output and fails when the word 'world' is found within this output
    - task2 just displays a message 'hello'
+   - ensure that the playbook runs all the tasks even if any of the tasks fail
+-  Write a playbook as follows:
+   - name of the playbook is failure2.yaml
+   - runs on all hosts
 
 **Task 3**
 
