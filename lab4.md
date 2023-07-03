@@ -25,6 +25,8 @@ Dealing with Failures
 -  Remove httpd and /var/www/html/index.html if they are already installed using ansible commands
 -  Write a playbook as follows:
    - runs on all hosts
+   - task1 runs a command "echo hello world", ignores the errors, register the output and fails when the word 'world' is found within this output
+   - task2 just displays a message 'hello'
 
 **Task 3**
 

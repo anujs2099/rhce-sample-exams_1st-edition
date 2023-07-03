@@ -24,7 +24,8 @@ ansible all -m shell -a "chattr +i /var/www/html/index.html"
 ansible-playbook task2.yaml
 
 ## Comments
-# a rescue or an always cannot be used without a block
-# a rescue is only run when tasks within a block fails
-# tasks within an always runs always
-# when, loop, register, notify statements are applied to all the tasks within a block, a rescue or an always 
+# ignore_errors: boolean (Task level)
+# force_handlers: boolean (Play level)
+# failed_when: condition (Task level & register variable must be used)
+# fail module (ignore_errors must be set to True & register variable must be used)
+# 
