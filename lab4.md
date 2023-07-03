@@ -31,6 +31,10 @@ Dealing with Failures
 -  Write a playbook as follows:
    - name of the playbook is failure2.yaml
    - runs on all hosts
+   - task1 tries to create a lv 'lvnothing' of size '1G' using vg 'vgnothing'. Do not create vgnothing
+   - task2 prints the output of task1
+   - task3 prints the msg 'volume group doesnt exist' when the string 'not found' exists in the output of task1
+   - ensure that if any task fails, they do not stop the playbook. Do not skip any task
 
 **Task 3**
 
