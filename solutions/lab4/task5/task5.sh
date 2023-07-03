@@ -6,13 +6,15 @@ cd task5/
 cp ../../lab1/task2/inventory .
 cp ../../lab1/task2/ansible.cfg .
 
-vi task5.yaml
+vi file.yaml
+ansible-doc file | grep EXAMPLES -A3000 | less
+vi file.yaml
 ansible-doc shell | grep EXAMPLES -A3000 | less
-vi task5.yaml
+vi file.yaml
 ansible-doc debug | grep EXAMPLES -A3000 | less
-vi task5.yaml
-ansible-playbook --syntax-check task5.yaml
-ansible-playbook task5.yaml
+vi file.yaml
+ansible-playbook --syntax-check file.yaml
+ansible-playbook file.yaml
 
 ## Common File Modules
 # lineinfile

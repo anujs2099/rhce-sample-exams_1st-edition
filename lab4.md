@@ -67,6 +67,7 @@ Using Modules to Manipulate Files
 -  Project directory name is task5
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
+   - playbook name is file.yaml
    - runs on all hosts
    - create a file /tmp/removeme with owner 'ansible', mode 0640, setype public_content_rw_t
 
