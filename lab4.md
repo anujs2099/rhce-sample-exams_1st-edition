@@ -38,6 +38,12 @@ Dealing with Failures
 
 **Task 3**
 
+Managing Changed Status
+
+-  Project directory name is task3
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 4**
 
