@@ -108,6 +108,12 @@ Using Jinja2 Templates
 
 **Task 8**
 
+Using Control Structures in Jinja2 Templates
+
+-  Project directory name is task8
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 9**
 
