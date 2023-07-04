@@ -127,13 +127,16 @@ Using Control Structures in Jinja2 Templates
 
 **Task 9**
 
-
+Deploying Files with Templates
 
 -  Project directory name is task9
 -  Use the inventory file & configuration file from lab1/task2
--  Write a playbook as follows:
+-  To configure Anonymous FTP upload, write a playbook as follows:
    - runs on all hosts
-   - write a Jinja2 template as follows:
+   - vsftpd.conf is modified to allow anonymous FTP access and uploads
+   - The directory /var/ftp/pub is configured with the appropriate permissions
+   - The directory /var/ftp/pub is configured with the appropriate SELinux context label
+   - The SELinux boolean ftpd_anon_write is set to on
 
 **Task 10**
 
