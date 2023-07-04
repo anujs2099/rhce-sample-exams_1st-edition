@@ -131,12 +131,17 @@ Deploying Files with Templates
 
 -  Project directory name is task9
 -  Use the inventory file & configuration file from lab1/task2
--  To configure Anonymous FTP upload, write a playbook as follows:
-   - runs on all hosts
+-  To configure Anonymous FTP upload, the following is accomplished:
    - vsftpd.conf is modified to allow anonymous FTP access and uploads
    - The directory /var/ftp/pub is configured with the appropriate permissions
    - The directory /var/ftp/pub is configured with the appropriate SELinux context label
    - The SELinux boolean ftpd_anon_write is set to on
+-  Write a playbook as follows:
+   - runs on all hosts
+   - ensures that the vsftpd service is installed, enabled
+   - ensure that the firewall is opened 
+   - the above FTP requirements are met
+   - Define variables in the playbook to set vsftpd.conf parameters and use these in a template
 
 **Task 10**
 
