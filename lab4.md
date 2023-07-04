@@ -110,12 +110,12 @@ Using Jinja2 Templates
 
 Using Control Structures in Jinja2 Templates
 
--  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab4/task8/
+-  Project directory name is task8
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on all hosts
    - write a Jinja2 template as follows:
-     - template filename is hosts.j2
+     - template directory/filename is templates/hosts.j2
      - it generates hosts file within each host as follows:
        - 192.168.174.132 control control.example.com
        - 192.168.174.133 ansible1 ansible1.example.com
