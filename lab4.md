@@ -90,8 +90,7 @@ Managing SELinux File Context
 -  Write a playbook as follows:
    - runs on all hosts
    - install the selinux package 'policycoreutils-python-utils'
-   - change the selinux context to 'tmp_t' on the file /tmp/removeme
-   - ensure that the changes persist across reboots
+   - change the selinux context to 'tmp_t' on the file /tmp/removeme such that it persists across reboots & make use of a handler
 
 **Task 7**
 

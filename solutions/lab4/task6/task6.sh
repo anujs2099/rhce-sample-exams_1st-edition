@@ -26,3 +26,4 @@ ansible-playbook task6.yaml
 ## Common SELinux Modules
 # file (equal to chcon - sets SELinux context directly on the file)
 # sefcontext (equal to semanage - sets SELinux context on the policy)
+# shell or command (used to run restorecon after running sefcontext module)
