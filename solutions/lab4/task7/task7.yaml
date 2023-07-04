@@ -13,7 +13,7 @@
       var: values
   - name: Create vsftpd.conf
     template:
-      src: vsftpd.j2
+      src: templates/vsftpd.j2
       dest: /etc/vsftpd/vsftpd.conf
       backup: true
   - name: verify - vsftpd.conf file
