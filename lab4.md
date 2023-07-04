@@ -89,6 +89,9 @@ Managing SELinux File Context
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on all hosts
+   - install the selinux package 'policycoreutils-python-utils'
+   - change the selinux context to 'tmp_t' on the file /tmp/removeme
+   - ensure that the changes persist across reboots
 
 **Task 7**
 
