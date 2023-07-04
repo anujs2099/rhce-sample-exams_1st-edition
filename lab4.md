@@ -117,15 +117,23 @@ Using Control Structures in Jinja2 Templates
    - write a Jinja2 template as follows:
      - template directory/filename is templates/hosts.j2
      - it generates hosts file within each host as follows:
+       - 127.0.0.1 localhost
        - 192.168.174.132 control control.example.com
        - 192.168.174.133 ansible1 ansible1.example.com
        - 192.168.174.134 ansible2 ansible2.example.com
-     - do no use static values but instead write a control structure using for or if statements
+     - do no use static values but instead write a control structure using for or if statements. You can use static value for '127.0.0.1 localhost'
    - run the template and copy the generated file as /etc/hosts on the hosts
    - ensure if there is an existing /etc/hosts file, it is backed up
 
 **Task 9**
 
+
+
+-  Project directory name is task9
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
+   - write a Jinja2 template as follows:
 
 **Task 10**
 
