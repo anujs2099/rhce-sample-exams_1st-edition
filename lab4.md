@@ -104,6 +104,7 @@ Using Jinja2 Templates
    - uses vsftpd.j2 template as follows:
      - replaces all the '?' within the template with YES values such that the values come dynamically 
      - copies the rendered file as /etc/vsftpd/vsftpd.conf on the hosts
+     - ensure if there is an existing /etc/vsftpd/vsftpd.conf file, it is backed up
 
 **Task 8**
 

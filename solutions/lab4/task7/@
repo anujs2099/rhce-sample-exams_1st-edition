@@ -18,11 +18,7 @@
       backup: true
   - name: verify - vsftpd.conf file
     shell: |
-      echo ''
-      ls -ltr /etc/vsftpd/*vsftpd*
-      echo ''
-      cat /etc/vsftpd/vsftpd.conf | grep -i yes
-    changed_when: false
+      cat /etc/vsftpd/vsftpd.conf
     register: vsftpd_results
   - name: verify - vsftpd.conf file - print results
     debug: 
