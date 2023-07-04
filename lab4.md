@@ -142,6 +142,7 @@ Deploying Files with Templates
    - ensure that the firewall is opened 
    - the above FTP requirements are met
    - Define variables in the playbook to set vsftpd.conf parameters and use these in a template
+-  At the end of the playbook, verify connectivity, uploading the /etc/hosts file from localhost
 
 **Task 10**
 
