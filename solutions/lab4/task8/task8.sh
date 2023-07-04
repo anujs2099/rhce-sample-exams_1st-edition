@@ -14,10 +14,6 @@ vi task8.yaml
 ansible-playbook --syntax-check task8.yaml
 ansible-playbook task8.yaml
 
-## Jinja2 Templates
-# lineinfile and blockinfile modules are used for simple modifications
-# for advanced modifications, use template module with a template .j2 file
-
-## To prevent administrators from overwriting files that are managed by Ansible
-# in ansible.cfg set ansible_managed = Ansible managed
-# On top of the Jinja2 template, set the {{ ansible_managed }} variable
+## Using Control Structures in Jinja2 Templates
+# Not found easily in ansible documentation
+# for & if statements

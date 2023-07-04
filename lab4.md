@@ -103,17 +103,26 @@ Using Jinja2 Templates
    - install vsftpd
    - uses vsftpd.j2 template as follows:
      - replaces all the '?' within the template with YES values such that the values come dynamically 
-     - copies the rendered file as /etc/vsftpd/vsftpd.conf on the hosts
+     - copies the generated file as /etc/vsftpd/vsftpd.conf on the hosts
      - ensure if there is an existing /etc/vsftpd/vsftpd.conf file, it is backed up
 
 **Task 8**
 
 Using Control Structures in Jinja2 Templates
 
--  Project directory name is task8
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab4/task8/
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on all hosts
+   - write a Jinja2 template as follows:
+     - template filename is hosts.j2
+     - it generates hosts file within each host as follows:
+       - 192.168.174.132 control control.example.com
+       - 192.168.174.133 ansible1 ansible1.example.com
+       - 192.168.174.134 ansible2 ansible2.example.com
+     - do no use static values but instead write a control structure using for or if statements
+   - run the template and copy the generated file as /etc/hosts on the hosts
+   - ensure if there is an existing /etc/hosts file, it is backed up
 
 **Task 9**
 
