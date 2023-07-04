@@ -96,10 +96,14 @@ Managing SELinux File Context
 
 Using Jinja2 Templates
 
--  Project directory name is task6
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab4/task7/
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on all hosts
+   - install vsftpd
+   - uses vsftpd.j2 template as follows:
+     - replaces all the '?' within the template with YES values such that the values come dynamically 
+     - copies the rendered file as /etc/vsftpd/vsftpd.conf on the hosts
 
 **Task 8**
 
