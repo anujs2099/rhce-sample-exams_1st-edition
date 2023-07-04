@@ -94,6 +94,12 @@ Managing SELinux File Context
 
 **Task 7**
 
+Using Jinja2 Templates
+
+-  Project directory name is task6
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 8**
 
