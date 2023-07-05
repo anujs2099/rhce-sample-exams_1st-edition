@@ -133,7 +133,7 @@ Deploying Files with Templates
 -  Use the inventory file & configuration file from lab1/task2
 -  To configure Anonymous FTP upload, the following is accomplished:
    - vsftpd.conf is modified to allow anonymous FTP access and uploads
-   - The directory /var/ftp/pub is configured with the appropriate permissions
+   - The directory /var/ftp/pub is configured with the '0777' permissions
    - The directory /var/ftp/pub is configured with the appropriate SELinux context label
    - The SELinux boolean ftpd_anon_write is set to on
 -  Write a playbook as follows:
@@ -143,6 +143,7 @@ Deploying Files with Templates
    - the above FTP requirements are met
    - Define variables in the playbook to set vsftpd.conf parameters and use these in a template
 -  Write another playbook as follows:
+   - playbook name is verify.yaml
    - verify connectivity, uploading the /etc/hosts file to either ansible1 or ansible2 from localhost
 
 **Task 10**
