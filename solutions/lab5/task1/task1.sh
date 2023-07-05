@@ -26,8 +26,11 @@ ansible-galaxy role remove bertvv.httpd
 ansible-galaxy role list
 ls -ltr ~/.ansible/roles/
 
-ansible-galaxy init sammy_roger.myrole
+ansible-galaxy role init sammy_roger.myrole
 tree sammy_roger.myrole/
+
+ansible-galaxy role init --init-path ~/.ansible/roles/ sammy_roger.shared-role
+tree ~/.ansible/roles/
 
 mkdir roles
 vi roles/requirements.yaml
