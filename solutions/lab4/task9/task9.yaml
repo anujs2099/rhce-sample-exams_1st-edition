@@ -1,0 +1,59 @@
+---
+- name: setup vsftpd
+  hosts: all
+  vars: 
+  - anonymous_enable: "YES"
+  - anon_upload_enable: "YES"
+  tasks:
+  - name: Install vsftpd
+    yum:
+      name: vsftpd
+      state: present
+  - name: Start & Enable vsftpd service
+    service:
+      name: vsftpd
+      state: started
+      enabled: true
+  - name: Open firewall ports 
+    firewalld:
+#      port: 20-21/tcp
+#      port: 20-21/udp
+      service: ftp
+      permanent: yes
+      state: enabled
+      immediate: yes
+  - name: install selinux package
+    yum: 
+      name: policycoreutils-python-utils
+      state: present
+  - name: Set SELinux boolean ftpd_anon_write to on
+    shell: |
+      semanage boolean -m --on ftpd_anon_write
+  - name: generate /etc/vsftpd/vsftpd.conf through a template
+    template: 
+      src: templates/vsftpd.j2
+      dest: /etc/vsftpd/vsftpd.conf
+  - name: verify
+    shell: |
+      echo ''
+      echo 'systemctl is-active vsftpd'
+      systemctl is-active vsftpd
+      echo ''
+      echo 'systemctl is-enabled vsftpd'
+      systemctl is-enabled vsftpd
+      echo ''
+      echo 'firewall-cmd --list-all'
+      firewall-cmd --list-all
+      echo ''
+      echo 'cat /etc/vsftpd/vsftpd.conf'
+      cat /etc/vsftpd/vsftpd.conf
+      echo ''
+      echo 'ls -ldZ /var/ftp/pub'
+      ls -ldZ /var/ftp/pub
+      echo ''
+      echo 'semanage boolean -l | grep -i ftpd_anon_write'
+      semanage boolean -l | grep -i ftpd_anon_write
+    register: verify
+  - name: verify - print results
+    debug:
+      var: verify
