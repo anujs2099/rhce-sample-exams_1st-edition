@@ -52,5 +52,16 @@ $ tree myrole/
 - /usr/share/ansible/roles
 
 # Note:
-- roles will run before any task that is defined in a playbook
+- role tasks will run before any task that is defined in a playbook
+- use pre_tasks statement to define playbook tasks that needs to be run before role tasks
+- use post_tasks statement to define playbook tasks that needs to be run after all playbook & role tasks
+- Order of Execution (first to last)
+  - pre_tasks
+    - handlers
+  - role tasks
+  - playbook tasks
+  - post_tasks
+  - handlers
+
+
 

@@ -33,10 +33,13 @@ Using the Ansible Galaxy Command Line Tool
 
 Managing Order of Execution
 
--  Project directory name is task2
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab5/task2/
 -  Use the inventory file & configuration file from lab1/task2
--  Run appropriate commands:
-   - to get help for ansible-galaxy command
+-  Write a playbook as follows:
+   - runs on all hosts
+   - uses the roles/motd role
+   - run a task that updates yum cache
+   - run the above task before all playbook & role tasks 
 
 **Task 3**
 
