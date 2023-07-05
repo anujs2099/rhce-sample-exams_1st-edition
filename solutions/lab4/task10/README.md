@@ -23,18 +23,18 @@
 
 # Mandatory Role Structure
 $ tree myrole/
-myrole/
-├── defaults
-│   └── main.yaml
-├── handlers
-│   └── main.yaml
-├── meta
-│   └── main.yaml
-├── tasks
-│   └── main.yaml
-├── tests
-│   ├── inventory
-│   └── test.yaml
-└── vars
-    └── main.yaml
+- myrole/
+- ├── defaults
+- │   └── main.yaml
+- ├── handlers
+- │   └── main.yaml
+- ├── meta
+- │   └── main.yaml
+- ├── tasks
+- │   └── main.yaml
+- ├── tests
+- │   ├── inventory
+- │   └── test.yaml
+- └── vars
+-     └── main.yaml
 
