@@ -35,6 +35,6 @@ $ tree myrole/
 - ├── tests
 - │   ├── inventory
 - │   └── test.yaml
-- └── vars
--     └── main.yaml
+- ├── vars
+- │   └── main.yaml
 
