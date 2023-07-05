@@ -26,6 +26,12 @@ Using the Ansible Galaxy Command Line Tool
 
 **Task 2**
 
+Creating Custom Roles
+
+-  Project directory name is task2
+-  Use the inventory file & configuration file from lab1/task2
+-  Run appropriate commands:
+   - to get help for ansible-galaxy command
 
 **Task 3**
 
