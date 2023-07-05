@@ -6,12 +6,15 @@ cd task1/
 cp ../../lab1/task2/inventory .
 cp ../../lab1/task2/ansible.cfg .
 
-# visit galaxy.ansible.com and find a role that you want to download
 ansible-galaxy -h
-ansible-galaxy role -h
-ansible-playbook role install geerlingguy.nginx
+
+ansible-galaxy role search nginx
+
+ansible-galaxy role search nginx --author geerlingguy
+
+ansible-galaxy role search wordpress --platforms EL
+
+ansible-galaxy role info bertvv.wordpress
+
+ansible-galaxy role install bertvv.wordpress
 ls -ltr ~/.ansible/roles/
-tree ~/.ansible/roles/geerlingguy.nginx/
-vi task1.yaml 
-ansible-playbook task1.yaml
-ansible ansible2.example.com -m shell -a "systemctl status nginx"

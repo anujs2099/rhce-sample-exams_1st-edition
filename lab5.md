@@ -12,6 +12,11 @@ Using the Ansible Galaxy Command Line Tool
    - to search for the wordpress role from galaxy.ansible.com from platform EL 
    - to find information about the ansible-galaxy role bertvv.wordpress
    - to install the ansible-galaxy role bertvv.wordpress
+   - to list all ansible-galaxy roles
+   - to remove the ansible-galaxy role bertvv.wordpress that you just installed
+   - to create a directory structure for creating your own role where:
+     - username is sammy_roger
+     - role name is myrole
 
 **Task 2**
 
