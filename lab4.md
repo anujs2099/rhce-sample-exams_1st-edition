@@ -148,5 +148,9 @@ Deploying Files with Templates
 
 **Task 10**
 
+Understanding Directory Structure Best Practices
 
-
+-  Project directory name is task10
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
