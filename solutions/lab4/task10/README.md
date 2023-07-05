@@ -54,3 +54,9 @@ $ tree myrole/
 # Note:
 - roles will run before any task that is defined in a playbook
 
+# Conditional Roles
+- Conditional roles call a role dynamically, using the include_role module
+  - They are treated more like tasks
+- Conditional roles can be combined with conditional statements
+  - They will only run if the conditional statement is true
+
