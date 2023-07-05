@@ -19,7 +19,10 @@ Using the Ansible Galaxy Command Line Tool
      - role name is myrole
 -  Create a requirements.yaml in the current project directory to install the following roles:
    - geerlingguy.docker with latest version
-   - geerlingguy.nginx with 1.13 version. Name the role nginx-1.13
+   - geerlingguy.nginx with 1.13 version. Name the role nginx-1.13. 
+     - The role is not found so it will not be installed
+     - Go to galaxy.ansible.com and use the latest version but define it in requirements.yaml
+-  Ensure the roles from requirements.yaml gets installed in the roles/ directory within the current project directory
 
 **Task 2**
 

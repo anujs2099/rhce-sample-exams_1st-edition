@@ -28,3 +28,9 @@ ls -ltr ~/.ansible/roles/
 
 ansible-galaxy init sammy_roger.myrole
 tree sammy_roger.myrole/
+
+mkdir roles
+vi roles/requirements.yaml
+ansible-galaxy role install -h
+ansible-galaxy role install -r roles/requirements.yaml -p roles/
+tree

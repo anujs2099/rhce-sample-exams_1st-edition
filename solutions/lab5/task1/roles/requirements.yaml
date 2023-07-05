@@ -1,10 +1,5 @@
-- src: 
-  name: 
-  version:
-- src:
-  name:
-  version:
-- src:
-  name:
-  version:
+- src: geerlingguy.docker
+- src: geerlingguy.nginx
+  name: nginx-1.13
+  version: 1.13
  
