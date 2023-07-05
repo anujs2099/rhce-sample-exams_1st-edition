@@ -17,6 +17,9 @@ Using the Ansible Galaxy Command Line Tool
    - to create a directory structure for creating your own role where:
      - username is sammy_roger
      - role name is myrole
+-  Create a requirements.yaml in the current project directory to install the following roles:
+   - geerlingguy.docker with latest version
+   - geerlingguy.nginx with 1.13 version. Name the role nginx-1.13
 
 **Task 2**
 

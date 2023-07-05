@@ -18,3 +18,13 @@ ansible-galaxy role info bertvv.wordpress
 
 ansible-galaxy role install bertvv.wordpress
 ls -ltr ~/.ansible/roles/
+
+ansible-galaxy role list
+
+ansible-galaxy role remove bertvv.wordpress
+ansible-galaxy role remove bertvv.httpd
+ansible-galaxy role list
+ls -ltr ~/.ansible/roles/
+
+ansible-galaxy init sammy_roger.myrole
+tree sammy_roger.myrole/
