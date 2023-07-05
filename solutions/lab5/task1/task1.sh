@@ -33,4 +33,4 @@ mkdir roles
 vi roles/requirements.yaml
 ansible-galaxy role install -h
 ansible-galaxy role install -r roles/requirements.yaml -p roles/
-tree
+tree roles/
