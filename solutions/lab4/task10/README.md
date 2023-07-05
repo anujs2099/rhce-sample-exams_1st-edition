@@ -63,4 +63,3 @@ $ tree myrole/
   - ls -ltr ~/.ansible/roles
   - tree ~/.ansible/roles/geerlingguy.nginx/
 
-
