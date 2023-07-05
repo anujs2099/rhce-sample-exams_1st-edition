@@ -148,9 +148,13 @@ Deploying Files with Templates
 
 **Task 10**
 
-Understanding Ansible Roles
+Understanding Ansible Roles & Ansible Galaxy
 
 -  Project directory name is task10
 -  Use the inventory file & configuration file from lab1/task2
+-  Go to galaxy.ansible.com and download an nginx role
 -  Write a playbook as follows:
-   - runs on all hosts
+   - runs on ansible2.example.com
+   - uses the nginx role you just downloaded to install nginx
+
+

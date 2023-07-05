@@ -24,17 +24,43 @@
 # Mandatory Role Structure
 $ tree myrole/
 - myrole/
-- ├── defaults
+- ├── defaults --> default values of role variables. Overwritten by play level variables
 - │   └── main.yaml
-- ├── handlers
+- ├── handlers --> handlers defined
 - │   └── main.yaml
-- ├── meta
+- ├── meta --> role metadata such as information about author, license, dependencies, etc
 - │   └── main.yaml
-- ├── tasks
+- ├── tasks --> tasks defined
 - │   └── main.yaml
-- ├── tests
+- ├── tests --> optional inventory file and test.yaml playbook to test the role
 - │   ├── inventory
 - │   └── test.yaml
-- ├── vars
+- ├── vars --> standard variables that cannot be overwritten by play level variables
 - │   └── main.yaml
+- ├── templates --> Jinja2 templates
+- ├── files --> static files needed by role tasks
+
+# Roles can be obtained in many ways
+- You can write your own roles
+- For RHEL, the rhel-system-roles package is available
+- The community provides roles through the Ansible Galaxy website (galaxy.ansible.com)
+
+# Roles precendence order (highest to lowest order)
+- ./roles in project directory
+- ~/.ansible/roles 
+- /etc/ansible/roles
+- /usr/share/ansible/roles
+
+# Note:
+- roles will run before any task that is defined in a playbook
+
+# Using Ansible Galaxy for Standard Roles
+- Install a role from galaxy as follows:
+  - visit galaxy.ansible.com and find a role that you want to download
+  - ansible-galaxy -h
+  - ansible-galaxy role -h
+  - ansible-galaxy role install geerlingguy.nginx
+  - ls -ltr ~/.ansible/roles
+  - tree ~/.ansible/roles/geerlingguy.nginx/
+
 
