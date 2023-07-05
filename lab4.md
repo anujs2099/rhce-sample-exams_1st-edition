@@ -148,7 +148,7 @@ Deploying Files with Templates
 
 **Task 10**
 
-Understanding Directory Structure Best Practices
+Understanding Ansible Roles
 
 -  Project directory name is task10
 -  Use the inventory file & configuration file from lab1/task2
