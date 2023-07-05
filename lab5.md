@@ -43,6 +43,12 @@ Managing Order of Execution
 
 **Task 3**
 
+Understanding RHEL System Roles
+
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab5/task3/
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 4**
 
