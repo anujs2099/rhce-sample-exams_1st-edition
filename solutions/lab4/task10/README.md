@@ -54,12 +54,3 @@ $ tree myrole/
 # Note:
 - roles will run before any task that is defined in a playbook
 
-# Using Ansible Galaxy for Standard Roles
-- Install a role from galaxy as follows:
-  - visit galaxy.ansible.com and find a role that you want to download
-  - ansible-galaxy -h
-  - ansible-galaxy role -h
-  - ansible-galaxy role install geerlingguy.nginx
-  - ls -ltr ~/.ansible/roles
-  - tree ~/.ansible/roles/geerlingguy.nginx/
-
