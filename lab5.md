@@ -51,7 +51,7 @@ Using Collections
    - runs on ansible control host
    - ensure that the fact gathering is turned off
    - change the SELinux status from enabled to enforcing
-   - ensure to use the collection name for the appropriate module 
+-  Ensure to use the appropriate collection. Check if it is already installed. If not, please install it
 
 **Task 4**
 
