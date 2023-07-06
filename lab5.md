@@ -55,9 +55,8 @@ Using Collections
 -  Create a collections/requirements.yaml in the current project directory to install the following collections:
    - f5networks.f5_modules from cloud.redhat.com/api/automation-hub
    - ansible.netcommon from galaxy.ansible.com
-   - ciscosmb from galaxy.ansible.com
 -  Ensure the collections from requirements.yaml gets installed in the collections/ directory
-
+-  After installing the collections, delete them
 
 **Task 4**
 
