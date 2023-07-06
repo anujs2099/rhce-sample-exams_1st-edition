@@ -78,6 +78,12 @@ Using Ansible Roles
 
 **Task 5**
 
+Understanding RHEL System Roles
+
+-  Project directory name is task5
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 6**
 
