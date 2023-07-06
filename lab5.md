@@ -66,8 +66,7 @@ Using Ansible Roles
 -  Use the inventory file & configuration file from lab1/task2
 -  Create a role 'vhost' as follows:
    - install httpd, start httpd, enable httpd
-   - configure an Apache vhost
-   - uses vhost.conf.j2 template as follows:
+   - configure an Apache vhost which uses vhost.conf.j2 template as follows:
      - all references to the hostname 'test' or its fqdn 'test.example.com' are replaced with Ansible facts
      - copies the generated file as /etc/httpd/conf.d/vhost.conf on the hosts
      - ensure if there is an existing /etc/httpd/conf.d/vhost.conf file, it is backed up

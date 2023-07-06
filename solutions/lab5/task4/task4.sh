@@ -8,5 +8,5 @@ cp ../../lab1/task2/ansible.cfg .
 
 ansible-galaxy role init -h
 mkdir roles
-ansible-galaxy role init --init-path roles/ task4-role
-ls -ltr roles/task4-role/
+ansible-galaxy role init --init-path roles/ vhost
+ls -ltr roles/vhost/
