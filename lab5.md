@@ -45,7 +45,7 @@ Managing Order of Execution
 
 Using Collections
 
--  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab5/task3/
+-  Project directory name is task3
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on ansible control host
@@ -60,6 +60,14 @@ Using Collections
 
 **Task 4**
 
+Using Ansible Roles
+
+-  Project directory name is task4
+-  Use the inventory file & configuration file from lab1/task2
+-  Create a role as follows:
+   - configures an Apache vhost on the managed hosts in the group lamp
+   - Have it include a template to create a minimal vhost configuration file in which all references to the hostname are replaced with Ansible facts
+-  Use an ad-hoc command to test working of the vhost
 
 **Task 5**
 
