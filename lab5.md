@@ -48,7 +48,10 @@ Using Collections
 -  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab5/task3/
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
-   - runs on all hosts
+   - runs on ansible control host
+   - ensure that the fact gathering is turned off
+   - change the SELinux status from enabled to enforcing
+   - ensure to use the collection name for the appropriate module 
 
 **Task 4**
 
