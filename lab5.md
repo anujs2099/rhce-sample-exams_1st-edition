@@ -99,6 +99,12 @@ Understanding RHEL System Roles
 
 **Task 6**
 
+Using RHEL System Roles
+
+-  Project directory name is task6
+-  Use the inventory file & configuration file from lab1/task2
+-  Setup your virtual machines with an additional network cards
+-  Use a rhel-system-role to set up network cards in managed machines. You can use a simple configuration where the interface is set to DHCP
 
 **Task 7**
 
