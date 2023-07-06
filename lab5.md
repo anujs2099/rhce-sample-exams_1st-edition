@@ -74,6 +74,7 @@ Using Ansible Roles
    - use the role 'vhost'
    - runs on the group lamp whose members are ansible1.example.com & ansible2.example.com
    - copy the local index.html from files/html/ to /var/www/vhosts/test where test is a hostname. Replace test with Ansible facts
+   - verify everything through a verify task
 
 **Task 5**
 
