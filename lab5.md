@@ -22,12 +22,12 @@ Using the Ansible Galaxy Command Line Tool
      - username is sammy_roger
      - role name is shared-role
      - created in the ~/.ansible/roles/ directory
--  Create a requirements.yaml in the current project directory to install the following roles:
+-  Create a roles/requirements.yaml in the current project directory to install the following roles:
    - geerlingguy.docker with latest version
    - geerlingguy.nginx with 1.13 version. Role directory name should be my-nginx
      - The role is not found so it will not be installed
      - Go to galaxy.ansible.com and use the latest version but define it in requirements.yaml
--  Ensure the roles from requirements.yaml gets installed in the roles/ directory within the current project directory
+-  Ensure the roles from requirements.yaml gets installed in the roles/ directory
 
 **Task 2**
 
@@ -52,11 +52,11 @@ Using Collections
    - ensure that the fact gathering is turned off
    - change the SELinux status from enabled to enforcing
    - ensure to use the appropriate collection. Check if it is already installed. If not, please install it
--  Create a requirements.yaml in the current project directory to install the following collections:
+-  Create a collections/requirements.yaml in the current project directory to install the following collections:
    - f5networks.f5_modules from cloud.redhat.com/api/automation-hub
    - ansible.netcommon from galaxy.ansible.com
    - ciscosmb from galaxy.ansible.com
--  Ensure the collections from requirements.yaml gets installed in the roles/ directory within the current project directory
+-  Ensure the collections from requirements.yaml gets installed in the collections/ directory
 
 
 **Task 4**

@@ -12,3 +12,8 @@ ansible-doc selinux | grep EXAMPLES -A3000 | less
 ansible-galaxy collection install ansible.posix
 ansible-playbook task3.yaml
 ls -ltr ~/.ansible/collections/
+
+mkdir collections/
+vi collections/requirements.yaml
+ansible-galaxy collection install -h
+ansible-galaxy collection install -r requirements.yaml -p collections/
