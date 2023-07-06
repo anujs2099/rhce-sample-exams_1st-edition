@@ -82,8 +82,16 @@ Understanding RHEL System Roles
 
 -  Project directory name is task5
 -  Use the inventory file & configuration file from lab1/task2
+-  Run appropriate commands to: 
+   - install rhel system roles
+   - find out all the files installed by the package for rhel system roles
+   - find out where all the rhel system roles were installed
+   - find out where all the examples are located for the rhel system roles
+   - explore the rhel selinux system role like how to use it in a playbook, etc
+   - explore the rhel timesync system role like how to use it in a playbook, etc
 -  Write a playbook as follows:
    - runs on all hosts
+
 
 **Task 6**
 
