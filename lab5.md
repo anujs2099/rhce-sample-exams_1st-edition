@@ -91,7 +91,11 @@ Understanding RHEL System Roles
    - explore the rhel timesync system role like how to use it in a playbook, etc
 -  Write a playbook as follows:
    - runs on all hosts
-
+   - sets up the following ntp servers:
+     - 0.rhel.pool.ntp.org, 1.rhel.pool.ntp.org, 2.rhel.pool.ntp.org, 3.rhel.pool.ntp.org
+     - iburst is set to true
+   - sets up the timezone to America/Los_Angeles
+   - uses rhel-system-role for timesync
 
 **Task 6**
 
