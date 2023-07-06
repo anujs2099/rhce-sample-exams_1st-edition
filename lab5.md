@@ -62,12 +62,19 @@ Using Collections
 
 Using Ansible Roles
 
--  Project directory name is task4
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab5/task4/
 -  Use the inventory file & configuration file from lab1/task2
--  Create a role as follows:
-   - configures an Apache vhost on the managed hosts in the group lamp
-   - Have it include a template to create a minimal vhost configuration file in which all references to the hostname are replaced with Ansible facts
--  Use an ad-hoc command to test working of the vhost
+-  Create a role 'vhost' as follows:
+   - install httpd, start httpd, enable httpd
+   - configure an Apache vhost
+   - uses vhost.conf.j2 template as follows:
+     - all references to the hostname 'test' or its fqdn 'test.example.com' are replaced with Ansible facts
+     - copies the generated file as /etc/httpd/conf.d/vhost.conf on the hosts
+     - ensure if there is an existing /etc/httpd/conf.d/vhost.conf file, it is backed up
+-  Create a playbook as follows:
+   - use the role 'vhost'
+   - runs on the group lamp whose members are ansible1.example.com & ansible2.example.com
+   - copy the local index.html from files/html/ to /var/www/vhosts/test where test is a hostname. Replace test with Ansible facts
 
 **Task 5**
 

@@ -1,0 +1,18 @@
+---
+- name: Install Apache vhost playbook
+  hosts: lamp
+  roles:
+  - roles/task4-role
+  tasks:
+  - name: install contents from local file
+    copy:
+      src: files/html/index.html
+      dest: /var/www/vhosts/{{ ansible_facts.hostname }}
+  - name: verify
+    shell: |
+      systemctl status httpd
+      cat /var/www/vhosts/{{ ansible_facts.hostname }}
+    register: verify
+  - name: verify - print results
+    debug: 
+      var: verify
