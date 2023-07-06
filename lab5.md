@@ -51,7 +51,13 @@ Using Collections
    - runs on ansible control host
    - ensure that the fact gathering is turned off
    - change the SELinux status from enabled to enforcing
--  Ensure to use the appropriate collection. Check if it is already installed. If not, please install it
+   - ensure to use the appropriate collection. Check if it is already installed. If not, please install it
+-  Create a requirements.yaml in the current project directory to install the following collections:
+   - f5networks.f5_modules from cloud.redhat.com/api/automation-hub
+   - ansible.netcommon from galaxy.ansible.com
+   - ciscosmb from galaxy.ansible.com
+-  Ensure the collections from requirements.yaml gets installed in the roles/ directory within the current project directory
+
 
 **Task 4**
 

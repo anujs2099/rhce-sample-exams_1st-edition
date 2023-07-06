@@ -78,7 +78,9 @@ $ tree myrole/
 - It takes a list of collections as its argument
 - After using the collections keyword, the collection itself can be addressed the old way. eg, selinux instead of ansible.posix.selinux
 
-
+# Additional Notes on Collections
+- In ansible 2.9, collections are NOT a default part of Ansible. 
+- You would have to install individual collections
 
 
 

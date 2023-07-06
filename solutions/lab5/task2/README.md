@@ -51,7 +51,7 @@ $ tree myrole/
 - /etc/ansible/roles
 - /usr/share/ansible/roles
 
-# Note:
+# Additional Notes on Roles
 - role tasks will run before any task that is defined in a playbook
 - use pre_tasks statement to define playbook tasks that needs to be run before role tasks
 - use post_tasks statement to define playbook tasks that needs to be run after all playbook & role tasks
@@ -62,6 +62,25 @@ $ tree myrole/
   - playbook tasks
   - post_tasks
   - handlers
+
+# Collections include the following
+- modules
+- roles
+- plugins --> extend the python code on the ansible control host
+
+# Understanding Collection Naming
+- Fully Qualified Collection Name (FQCN) such as ansible.netcommon
+- Within this FQN, plugins, modules, etc are addressed such as ansible.netcommon.cli_command
+- Before collections, you would address a module name such as user, now you address this module as ansible.builtin.user
+
+# Using Collections in Playbooks
+- In the play header, the collections keyword can be used
+- It takes a list of collections as its argument
+- After using the collections keyword, the collection itself can be addressed the old way. eg, selinux instead of ansible.posix.selinux
+
+# Additional Notes on Collections
+- In ansible 2.9, collections are NOT a default part of Ansible. 
+- You would have to install individual collections
 
 
 
