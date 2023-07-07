@@ -108,10 +108,11 @@ Using RHEL System Roles
 
 **Task 7**
 
-Managing Inventory
+Addressing Host Patterns
 
 -  Project directory name is task6
 -  Use the inventory file & configuration file from lab1/task2
+-  Output the present inventory file in json format
 -  Write a playbook as follows:
    - runs on all hosts
 
