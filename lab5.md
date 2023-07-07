@@ -125,10 +125,11 @@ Using imported tasks
 
 Using Ansible in Large Environments
 
--  Project directory name is task8
+-  Project directory name is /home/ansible/rhce-sample-exams_1st-edition/files/lab5/task8/
 -  Use the inventory file & configuration file from lab1/task2
--  Write a playbook as follows:
-   - runs on all hosts
+-  Analyze the project in the ./lab directory
+   - optimize it for use in a large environment
+   - try to fix the errors
 
 **Task 9**
 
