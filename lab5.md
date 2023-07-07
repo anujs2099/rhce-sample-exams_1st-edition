@@ -115,6 +115,11 @@ Addressing Host Patterns
 -  Output the present inventory file in json format
 -  Write a playbook as follows:
    - runs on all hosts
+   - imports the task: 'install-and-setup.yaml' to install the package httpd 
+   - make use of variables when defining httpd
+-  Write the 'install-and-setup.yaml' task file as follows:
+   - installs the latest version of a package
+   - starts and enables the installed service
 
 **Task 8**
 
