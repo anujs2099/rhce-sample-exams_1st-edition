@@ -108,9 +108,9 @@ Using RHEL System Roles
 
 **Task 7**
 
-Addressing Host Patterns
+Using imported tasks
 
--  Project directory name is task6
+-  Project directory name is task7
 -  Use the inventory file & configuration file from lab1/task2
 -  Output the present inventory file in json format
 -  Write a playbook as follows:
@@ -123,6 +123,12 @@ Addressing Host Patterns
 
 **Task 8**
 
+Using Ansible in Large Environments
+
+-  Project directory name is task8
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 9**
 
