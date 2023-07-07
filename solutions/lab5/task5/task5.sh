@@ -20,6 +20,9 @@ vi /usr/share/doc/rhel-system-roles/timesync/example-single-pool-playbook.yml
 vi /usr/share/doc/rhel-system-roles/timesync/example-multiple-ntp-servers-playbook.yml
 vi /usr/share/ansible/roles/rhel-system-roles.timesync/tasks/main.yml
 
-vi task5.yaml
+ls -ltr /usr/share/ansible/roles/rhel-system-roles.timesync/
+cat /usr/share/doc/rhel-system-roles/timesync/example-multiple-ntp-servers-playbook.yml 
+ansible-doc timezone | grep EXAMPLES -A3000 | less
+vi task5.yaml 
 ansible-playbook task5.yaml
 
