@@ -103,11 +103,17 @@ Using RHEL System Roles
 
 -  Project directory name is task6
 -  Use the inventory file & configuration file from lab1/task2
--  Setup your virtual machines with an additional network cards
--  Use a rhel-system-role to set up network cards in managed machines. You can use a simple configuration where the interface is set to DHCP
+-  Setup ansible2 virtual machine with an additional network card
+-  Use a rhel-system-role to set up network cards in ansible2 managed machine. You can use a simple configuration where the interface is set to DHCP
 
 **Task 7**
 
+Managing Inventory
+
+-  Project directory name is task6
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 8**
 

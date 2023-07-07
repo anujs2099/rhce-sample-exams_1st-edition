@@ -6,7 +6,7 @@ cd task5/
 cp ../../lab1/task2/inventory .
 cp ../../lab1/task2/ansible.cfg .
 
-yum install rhel-system-roles -y
+sudo yum install rhel-system-roles -y
 rpm -ql rhel-system-roles
 ls -ltr /usr/share/ansible/roles/
 ls -ltr /usr/share/doc/rhel-system-roles/
