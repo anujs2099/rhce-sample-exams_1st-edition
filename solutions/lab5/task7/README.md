@@ -19,13 +19,21 @@
 - To override default behavior, use serial keyword in the playbook to run hosts through the entire play in batches
 
 # Understanding Inclusion
-- includes and imports can happen for both playbooks and tasks 
+- includes happen for only tasks but imports happen for both playbooks & tasks
 - An include is a dynamic process. Ansible processes the included files as soon as they are called
-  - include_tasks
+  - include_tasks / include
+    - task level
     - ansible-playbook --list-tasks <playbook> will not show the tasks
     - ansible-playbook --start-at-task '<task>' <playbook> doesn't work
     - You cannot trigger a handler in an imported task file from the main task file
+  - include_vars
+    - play level
+    - task level
+  - include_role
+    - task level
 - An import is a static process. Ansible pre-processes the imported files before the actual play is started
-  - use import_playbook at the beginning of the playbook
+  - import_playbook
+    - beginning of the playbook
   - use import_tasks to import tasks from a task file in a playbook. It will be imported where it is included
-
+    - task level
+   

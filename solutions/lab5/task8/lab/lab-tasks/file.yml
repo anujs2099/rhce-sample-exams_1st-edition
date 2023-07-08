@@ -17,3 +17,18 @@
       name: "{{ ansible_local.custom.services.ftp_service }}" 
       state: started
       enabled: true
+
+  - name: open the port for the ftp service
+    firewalld:
+      service: ftp
+      state: enabled
+      immediate: true
+      permanent: true
+
+  - name: open the port for the smb service
+    firewalld:
+      service: "{{ ansible_local.custom.packages.smb_package }}"
+      state: enabled
+      immediate: true
+      permanent: true
+

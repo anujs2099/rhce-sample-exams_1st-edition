@@ -132,6 +132,12 @@ Using Ansible in Large Environments
 
 **Task 9**
 
+Managing Ansible Logs
+
+-  Project directory name is task9
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 10**
 
