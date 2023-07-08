@@ -19,6 +19,12 @@ Using Modules for Troubleshooting and Testing
 
 **Task 2**
 
+Troubleshooting Connection Issues
+
+-  Project directory name is task2
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 3**
 
