@@ -123,12 +123,12 @@ Using imported tasks
 
 **Task 8**
 
-Using Ansible in Large Environments
+Using Ansible in Large Environments & Troubleshooting Ansible
 
 -  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab5/task8/
 -  Analyze the project in the ./lab directory
    - optimize it for use in a large environment
-   - try to fix the errors
+   - fix all the errors
 
 **Task 9**
 
