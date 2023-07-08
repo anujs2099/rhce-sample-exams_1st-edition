@@ -138,10 +138,13 @@ Managing Ansible Logs
 -  Use the inventory file & configuration file from lab1/task2
 -  Make ansible write logs to /var/log/ansible.log and verify that it works. Remove the change
 -  Make ansible write logs to ./log/ansible.log in the current project directory and verify that it works
--  Write a playbook as follows:
-   - runs on all hosts
 
 **Task 10**
 
+Using Check Mode
+
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab5/task10/
+-  Use the inventory file & configuration file from lab1/task2
+-  Run the ansible-playbook in check mode on vsftpd.yml. There isn't anything interesting going on
 
 
