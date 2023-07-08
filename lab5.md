@@ -136,7 +136,8 @@ Managing Ansible Logs
 
 -  Project directory name is task9
 -  Use the inventory file & configuration file from lab1/task2
--  Make ansible write logs to ./log directory in the current project directory
+-  Make ansible write logs to /var/log/ansible.log and verify that it works. Remove the change
+-  Make ansible write logs to ./log/ansible.log in the current project directory and verify that it works
 -  Write a playbook as follows:
    - runs on all hosts
 
