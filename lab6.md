@@ -13,7 +13,9 @@ Using Modules for Troubleshooting and Testing
 -  Write a playbook 'assertstat.yaml' as follows:
    - runs on ansible2.example.com
    - gets information about the /etc/ directory
-   - check if /etc/ is a directory or not. If it isn't, then fail
+   - check if /etc/ is a directory or not
+     - if it is, then it displays the message: "All assertions passed"
+     - if it isn't, then it displays the message: "Assertion failed"
 
 **Task 2**
 
