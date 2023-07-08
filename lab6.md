@@ -9,7 +9,11 @@ Using Modules for Troubleshooting and Testing
    - runs on ansible2.example.com
    - get information about all installed packages
    - print the package facts
-   - prints a message with version of bash installed
+   - prints a message with version of bash installed when bash is found in the list of installed packages
+-  Write a playbook 'assertstat.yaml' as follows:
+   - runs on ansible2.example.com
+   - gets information about the /etc/ directory
+   - check if /etc/ is a directory or not. If it isn't, then fail
 
 **Task 2**
 
