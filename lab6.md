@@ -50,11 +50,23 @@ Managing Software
 
 Implementing a Playbook to Manage Users
 
--  Project directory name is task4
+-  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab6/task4/
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook 'setup_users.yaml" as follows:
-   - runs on all hosts
-   - 
+   - runs on ansible1.example.com
+   - add the following groups
+     - sales
+     - account
+   - add the following users belonging to their given groups
+     - user linda to group sales
+     - user lori to group sales
+     - user lisa to group account
+     - user lucy to group account
+   - ensure that for any user or group that needs to be added, it gets done without modifying the playbook each time
+   - add SSH public keys from the ./files/ directory to the ~/.ssh/authorized_keys file for each user
+   - add sales group members to sudo such that they can run any command with sudo permissions without having to type the password each time
+   - disable root SSH login
+   - ensure ssh is only restarted after root SSH login gets disabled
 
 **Task 5**
 
