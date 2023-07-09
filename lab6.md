@@ -33,7 +33,7 @@ Implementing a Playbook to Manage Software
    - install a package nmap such that different packages can be installed without modifying the playbook each time
    - get information about all installed packages
    - display package information about the installed package nmap only when it got installed successfully
-- It is okay if the above playbook gets failed at "install a package nmap" task. 
+- It is okay if the above playbook gets failed at "install a package nmap" task. We will fix it in the next task.
 
 **Task 3**
 
@@ -48,6 +48,13 @@ Managing Software
 
 **Task 4**
 
+Implementing a Playbook to Manage Users
+
+-  Project directory name is task4
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook 'setup_users.yaml" as follows:
+   - runs on all hosts
+   - 
 
 **Task 5**
 
