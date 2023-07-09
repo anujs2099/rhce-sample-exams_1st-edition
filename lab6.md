@@ -33,9 +33,18 @@ Implementing a Playbook to Manage Software
    - install a package nmap such that different packages can be installed without modifying the playbook each time
    - get information about all installed packages
    - display package information about the installed package nmap only when it got installed successfully
+- It is okay if the above playbook gets failed at "install a package nmap" task. 
 
 **Task 3**
 
+Managing Software
+
+-  Project directory name is task3
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - set up a repository on control.example.com. This repository should offer multiple files, including the nmap file. Provide a file list using variables
+   - configure ansible1 and ansible2 to use the repository that is provided through the packages repository
+   - install the nmap package from this repository
 
 **Task 4**
 

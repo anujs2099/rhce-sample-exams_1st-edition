@@ -4,19 +4,12 @@
   vars_files:
   - vars/all_vars
   tasks:
-  - name: shell
-    shell: |
-      cat /etc/yum.repos.d/task2-repos.repo
-    register: display
-  - name: debug
-    debug: 
-      var: display
   - name: install yum repository
     yum_repository:
       name: task2-repo
-      description: RHCE8 repo
+      description: EPEL repository
       file: task2-repos
-      baseurl: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+      baseurl: http://mirrorlist.repoforge.org/el7/mirrors-rpmforge
       gpgcheck: no
       state: present
   - name: install package - {{ package }}
@@ -33,12 +26,12 @@
   - name: Verify
     shell: |
       echo ''
-      echo 'yum repo list'
-      yum repo list
+      echo 'yum repolist'
+      yum repolist
       echo ''
       echo 'ls -ltr /etc/yum.repos.d/'
       ls -ltr /etc/yum.repos.d/
       echo ''
-      echo 'cat /etc/yum.repos.d/task2-repo'
-      cat /etc/yum.repos.d/task2-repo
+      echo 'cat /etc/yum.repos.d/task2-repo.repo'
+      cat /etc/yum.repos.d/task2-repo.repo
      
