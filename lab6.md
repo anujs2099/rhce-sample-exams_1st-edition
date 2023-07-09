@@ -27,9 +27,9 @@ Implementing a Playbook to Manage Software
    - runs on all hosts
    - install a yum repository such that the following repository file/information is installed at /etc/yum.repos.d/task2-repos.repo
      - "[task2-repo]",
-       "baseurl = https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm",
-       "gpgcheck = 0",
-       "name = EPEL repository"
+     - "baseurl = https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm",
+     - "gpgcheck = 0",
+     - "name = EPEL repository"
    - install a package nmap such that different packages can be installed without modifying the playbook each time
    - get information about all installed packages
    - display package information about the installed package nmap only when it got installed successfully
