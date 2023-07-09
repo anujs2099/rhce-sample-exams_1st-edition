@@ -19,12 +19,21 @@ Using Modules for Troubleshooting and Testing
 
 **Task 2**
 
-Understanding Modules Related to Software Management
+Implementing a Playbook to Manage Software
 
 -  Project directory name is task2
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on all hosts
+   - install a yum repository with the following values:
+     - name: task2-repo
+     - description: RHCE8 repo
+     - file: task2-repo
+     - baseurl: ftp://control.example.com/repo/
+     - gpcheck: no
+   - install a package nmap such that different packages can be installed without modifying the playbook each time
+   - get information about all installed packages
+   - display package information about the installed package nmap only when it got installed successfully
 
 **Task 3**
 
