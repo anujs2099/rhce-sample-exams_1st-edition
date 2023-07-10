@@ -117,9 +117,13 @@ Implementing a Playbook to Manage Processes and Tasks
    - ensure that the file /etc/cron.d/keep-alive-messages gets deleted as well
 -  Write a playbook 'setup-at-task.yaml' as follows:
    - runs on ansible2.example.com
+   - ensure that at utility is installed
    - a job that runs the command "date > /tmp/my-at-file" after 1 minute
    - ensure that the job only runs once
-   - ensure that if there is another similar job, a new job is created
+   - ensure that if there is another similar job, a new job is not created
+-  Write a playbook 'setup-boot-target.yaml' as follows:
+   - runs on ansible1.example.com
+   - set the systemd boot target to graphical such that when the system reboots, it goes into the graphical interface
 
 **Task 8**
 

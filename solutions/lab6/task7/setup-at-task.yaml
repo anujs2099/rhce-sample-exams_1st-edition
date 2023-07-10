@@ -2,20 +2,28 @@
 - name: Implementing a Playbook to Manage Processes and Tasks
   hosts: ansible2.example.com
   tasks:
+  - name: ensure at is installed
+    yum:
+      name: at
+      state: present
   - name: Setup an at task
-      at:
-
+    at:
+      command: date > /tmp/my-at-file
+      count: 1
+      units: minutes
+      unique: true
+      state: present
   - name: Verify 
     shell: |
       echo ''
-      echo 'ls -ltr /etc/cron.d'
-      ls -ltr /etc/cron.d
+      echo 'atq'
+      atq
       echo ''
-      echo 'cat /etc/cron.d/keep-alive-messages'
-      cat /etc/cron.d/keep-alive-messages
+      echo 'ls -ltr /tmp/my-at-file'
+      ls -ltr /tmp/my-at-file
       echo ''
-      echo 'cat /tmp/cron-keepalive' 
-      cat /tmp/cron-keepalive
+      echo 'cat /tmp/my-at-file'
+      cat /tmp/my-at-file
     register: verify
   - name: Verify - print results
     debug: 
