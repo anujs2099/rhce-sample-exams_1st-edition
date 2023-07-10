@@ -92,7 +92,10 @@ Managing Encrypted Passwords
 -  Project directory name is task6
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
-   - runs on all hosts
+   - runs on ansible2.example.com
+   - encrypt the password 'mypassword' using sha512 algorithm and a secret salt of your choice
+   - create the user joseph using the encrypted password
+   - ensure that 'mypassword' doesn't get mentioned anywhere in any variable file nor in the playbook
 
 **Task 7**
 

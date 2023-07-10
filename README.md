@@ -1,5 +1,8 @@
 # rhce-sample-exams
 
+Resources available during the exam:
+- docs.ansible.com
+
 Complete in this Order:
 -  Setup the lab environment using the setup.md instructions
 -  Do the Sander Van Vugt course on oreilly (1 time) --> https://learning.oreilly.com/videos/red-hat-certified/9780135987513/
