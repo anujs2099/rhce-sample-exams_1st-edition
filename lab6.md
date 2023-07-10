@@ -108,7 +108,7 @@ Implementing a Playbook to Manage Processes and Tasks - example1
    - run a cronjob as follows:
      - give it any name
      - runs every 2 minutes between 8am to 6pm for user ansible
-     - it writes the message "entry written at <date>" where <date> is the date of the entry
+     - it writes the message "entry written at \<date\>" where \<date\> is the date of the entry
      - message is written to the file /tmp/cron-keepalive
      - cron file is /etc/cron.d/keep-alive-messages where this cronjob is needed
 
