@@ -10,6 +10,7 @@ cp ../../lab1/task2/inventory .
 cp ../../lab1/task2/ansible.cfg .
 
 vi task6.yaml
+ansible localhost -m debug -a "msg={{ 'mypassword' | password_hash('sha512', 'mysecretsalt') }}"
 ansible-doc user | grep EXAMPLES -A3000 | less
 ansible-playbook task6.yaml
 ssh joseph@ansible2

@@ -99,13 +99,18 @@ Managing Encrypted Passwords
 
 **Task 7**
 
-Implementing a Playbook to Manage Processes and Tasks
+Implementing a Playbook to Manage Processes and Tasks - example1
 
 -  Project directory name is task7
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
-   - runs on all hosts
-
+   - runs on ansible1.example.com
+   - run a cronjob as follows:
+     - give it any name
+     - runs every 2 minutes between 8am to 6pm for user ansible
+     - it writes the message "entry written at <date>" where <date> is the date of the entry
+     - message is written to the file /tmp/cron-keepalive
+     - cron file is /etc/cron.d/keep-alive-messages where this cronjob is needed
 
 **Task 8**
 
