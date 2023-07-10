@@ -87,6 +87,12 @@ Implementing a Playbook to Manage Users - example2
 
 **Task 6**
 
+Managing Encrypted Passwords
+
+-  Project directory name is task6
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
 
 **Task 7**
 

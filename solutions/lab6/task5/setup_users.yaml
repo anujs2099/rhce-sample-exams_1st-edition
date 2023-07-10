@@ -3,6 +3,7 @@
   hosts: ansible2.example.com
   vars_files:
   - vars/defaults
+  - vars/users
   tasks:
 
   - name: Add groups
@@ -17,16 +18,16 @@
       name: "{{ item.username }}"
       group: "{{ item.groupname }}"
       state: present
-    loop: "{{ sudo_groups }}"
+    loop: "{{ usernames }}"
 
   - name: Add SSH public keys
     authorized_key:
       user: "{{ item.username }}"
       state: present
       key: "{{ lookup('file', './files' + '/{{ item.username }}' + '/id_rsa.pub') }}"
-    loop: "{{ sudo_groups }}"
+    loop: "{{ usernames }}"
 
-  - name: Add Sales group members to sudo
+  - name: Add some group members to sudo
     template:
       src: templates/sudoers.j2
       dest: /etc/sudoers.d/admin-access
