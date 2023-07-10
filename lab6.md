@@ -127,6 +127,15 @@ Implementing a Playbook to Manage Processes and Tasks
 
 **Task 8**
 
+Managing Processes and Tasks
+
+-  Project directory name is task8
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on ansible1.example.com
+   - set the default boot state of the server to multi-user.target
+   - reboot your server after doing so
+   - configure your playbook such that it will show the message "successfully rebooted" once it is available again
 
 **Task 9**
 
