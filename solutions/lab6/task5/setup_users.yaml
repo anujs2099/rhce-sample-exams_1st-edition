@@ -1,34 +1,35 @@
 ---
 - name: Implementing a Playbook to Manage Users
-  hosts: ansible1.example.com
+  hosts: ansible2.example.com
   vars_files:
   - vars/defaults
   tasks:
 
   - name: Add groups
     group:
-      name: "{{ item.groupname }}"
+      name: "{{ item.name }}"
+      gid: "{{ item.groupid }}"
       state: present
-    loop: "{{ groupnames }}"
+    loop: "{{ sudo_groups }}"
 
   - name: Add users
     user:
       name: "{{ item.username }}"
       group: "{{ item.groupname }}"
       state: present
-    loop: "{{ usernames }}"
+    loop: "{{ sudo_groups }}"
 
   - name: Add SSH public keys
     authorized_key:
       user: "{{ item.username }}"
       state: present
       key: "{{ lookup('file', './files' + '/{{ item.username }}' + '/id_rsa.pub') }}"
-    loop: "{{ usernames }}"
+    loop: "{{ sudo_groups }}"
 
   - name: Add Sales group members to sudo
-    copy:
-      content: '%sales ALL=(ALL) NOPASSWD: ALL'
-      dest: /etc/sudoers.d/sales
+    template:
+      src: templates/sudoers.j2
+      dest: /etc/sudoers.d/admin-access
 
   - name: Disable root SSH Login
     lineinfile:

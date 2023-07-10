@@ -75,10 +75,14 @@ Implementing a Playbook to Manage Users - example2
 -  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab6/task5/
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a 'sudoers.j2' jinja2 file as follows:
-   - uses the vars/defaults variable file
    - using for and/or if statements, write the code such that users who have the value of sudo set to true are the only ones that can run any command with sudo permissions without having to type the password each time
 -  Modify the playbook 'setup_users.yaml" from the previous task as follows:
    - runs on ansible2.example.com
+   - uses the vars/defaults variable file
+   - add the following users belonging to their given groups
+     - user jack to group developers
+     - user romero to group admins
+     - user shanika to group dbas
    - use the sudoers.j2 jinja template to grant sudo permissions
 
 **Task 6**

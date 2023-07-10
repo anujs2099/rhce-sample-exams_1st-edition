@@ -12,7 +12,7 @@ tree
 ansible-doc group | grep EXAMPLES -A3000 | less
 ansible-doc user | grep EXAMPLES -A3000 | less
 ansible-doc authorized_key | grep EXAMPLES -A3000 | less
-ansible-doc copy | grep EXAMPLES -A3000 | less
+ansible-doc template | grep EXAMPLES -A3000 | less
 ansible-doc lineinfile | grep EXAMPLES -A3000 | less
 ansible-doc service | grep EXAMPLES -A3000 | less
 ansible-playbook task5.yaml
