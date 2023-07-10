@@ -1,0 +1,25 @@
+---
+- name: Implementing a Playbook to Manage Processes and Tasks
+  hosts: ansible2.example.com
+  tasks:
+  - name: Setup an at task
+      at:
+
+  - name: Verify 
+    shell: |
+      echo ''
+      echo 'ls -ltr /etc/cron.d'
+      ls -ltr /etc/cron.d
+      echo ''
+      echo 'cat /etc/cron.d/keep-alive-messages'
+      cat /etc/cron.d/keep-alive-messages
+      echo ''
+      echo 'cat /tmp/cron-keepalive' 
+      cat /tmp/cron-keepalive
+    register: verify
+  - name: Verify - print results
+    debug: 
+      msg: 
+      - "{{ verify.stderr_lines }}"
+      - "{{ verify.stdout_lines }}"
+

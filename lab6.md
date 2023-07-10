@@ -52,7 +52,7 @@ Implementing a Playbook to Manage Users - example1
 
 -  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab6/task4/
 -  Use the inventory file & configuration file from lab1/task2
--  Write a playbook 'setup_users.yaml" as follows:
+-  Write a playbook 'setup_users.yaml' as follows:
    - runs on ansible1.example.com
    - add the following groups
      - sales
@@ -99,11 +99,11 @@ Managing Encrypted Passwords
 
 **Task 7**
 
-Implementing a Playbook to Manage Processes and Tasks - example1
+Implementing a Playbook to Manage Processes and Tasks
 
 -  Project directory name is task7
 -  Use the inventory file & configuration file from lab1/task2
--  Write a playbook as follows:
+-  Write a playbook 'setup-crontab.yaml' as follows:
    - runs on ansible1.example.com
    - run a cronjob as follows:
      - give it any name
@@ -111,6 +111,15 @@ Implementing a Playbook to Manage Processes and Tasks - example1
      - it writes the message "entry written at \<date\>" where \<date\> is the date of the entry
      - message is written to the file /tmp/cron-keepalive
      - cron file is /etc/cron.d/keep-alive-messages where this cronjob is needed
+-  Write a playbook 'delete-cronjob.yaml' as follows:
+   - runs on ansible1.example.com
+   - delete the cronjob that we setup in the previous playbook 'setup-crontab.yaml'
+   - ensure that the file /etc/cron.d/keep-alive-messages gets deleted as well
+-  Write a playbook 'setup-at-task.yaml' as follows:
+   - runs on ansible2.example.com
+   - a job that runs the command "date > /tmp/my-at-file" after 1 minute
+   - ensure that the job only runs once
+   - ensure that if there is another similar job, a new job is created
 
 **Task 8**
 
