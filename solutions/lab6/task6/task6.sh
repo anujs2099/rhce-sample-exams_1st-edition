@@ -10,11 +10,7 @@ cp ../../lab1/task2/inventory .
 cp ../../lab1/task2/ansible.cfg .
 
 vi task6.yaml
-ansible-doc group | grep EXAMPLES -A3000 | less
 ansible-doc user | grep EXAMPLES -A3000 | less
-ansible-doc authorized_key | grep EXAMPLES -A3000 | less
-ansible-doc template | grep EXAMPLES -A3000 | less
-ansible-doc lineinfile | grep EXAMPLES -A3000 | less
-ansible-doc service | grep EXAMPLES -A3000 | less
-ansible-playbook task5.yaml
-ansible ansible2.example.com -m shell -a "cat /etc/sudoers.d/admin-access"
+ansible-playbook task6.yaml
+ssh joseph@ansible2
+# Type the password to see if it works

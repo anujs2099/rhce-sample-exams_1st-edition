@@ -99,6 +99,13 @@ Managing Encrypted Passwords
 
 **Task 7**
 
+Implementing a Playbook to Manage Processes and Tasks
+
+-  Project directory name is task7
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on all hosts
+
 
 **Task 8**
 
