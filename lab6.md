@@ -153,7 +153,7 @@ Implementing a Playbook to Manage Storage
    - creates a vgs if not already created:
      - name: vgweb
      - devices: /dev/nvme0n2
-   - creates the following lvs if not already created and creates a filesystem at the given path:
+   - creates the following lvs if not already created, creates an XFS filesystem and mounts the fileystem at given path:
      - lv1
        - name: lvwebdocs
        - size: 512M
