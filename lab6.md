@@ -143,8 +143,28 @@ Implementing a Playbook to Manage Storage
 
 -  Project directory name is task9
 -  Use the inventory file & configuration file from lab1/task2
--  Write a playbook as follows:
-   - runs on all hosts
+-  Add 2GiB nvme disk to ansible1.example.com
+-  Write a playbook 'setup-storage' as follows:
+   - runs on ansible1.example.com
+   - creates a partition as follows if not already created:
+     - number: 1
+     - start: 1MiB
+     - end: 1GiB
+   - creates a vgs if not already created:
+     - name: vgweb
+     - devices: /dev/nvme0n2
+   - creates the following lvs if not already created and creates a filesystem at the given path:
+     - lv1
+       - name: lvwebdocs
+       - size: 512M
+       - vgroup: vgweb
+       - path: /var/www
+     - lv2
+       - name: lvlogs
+       - size: 256M
+       - vgroup: vgweb
+       - path: /var/log/httpd
+    - ensure that the playbook is dynamic such that it is able to create any new storage resources without itself being modified
 
 **Task 10**
 
