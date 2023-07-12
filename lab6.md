@@ -170,5 +170,13 @@ Implementing a Playbook to Manage Storage
 
 **Task 10**
 
+Managing Storage
+
+-  Project directory name is task10
+-  Use the inventory file & configuration file from lab1/task2
+-  Add 2GiB nvme disk to ansible1.example.com
+-  Write a playbook that detects all storage devices on managed systems
+
+
 
 

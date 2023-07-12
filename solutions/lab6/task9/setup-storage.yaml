@@ -12,12 +12,6 @@
       part_end: "{{ item.end }}"
       state: present 
     loop: "{{ partition }}"
-    register: debug
-
-  - name: debug
-    debug: 
-      var: debug
-
   - name: create a vg if not already created
     lvg:
       vg: "{{ item.name }}"
