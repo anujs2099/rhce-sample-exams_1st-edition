@@ -174,7 +174,6 @@ Managing Storage
 
 -  Project directory name is ~/rhce-sample-exams_1st-edition/files/lab6/task10/
 -  Use the inventory file & configuration file from lab1/task2
--  Add 2GiB nvme disk to ansible1.example.com
 -  Write a playbook as follows:
    - runs on all hosts
    - detects all storage devices of type cdroms and san luns
