@@ -147,12 +147,13 @@ Implementing a Playbook to Manage Storage
 -  Write a playbook 'setup-storage' as follows:
    - runs on ansible1.example.com
    - creates a partition as follows if not already created:
+     - device: /dev/nvme0n2
      - number: 1
      - start: 1MiB
      - end: 1GiB
    - creates a vgs if not already created:
      - name: vgweb
-     - devices: /dev/nvme0n2
+     - devices: /dev/nvme0n2p1
    - creates the following lvs if not already created, creates an XFS filesystem and mounts the fileystem at given path:
      - lv1
        - name: lvwebdocs
@@ -165,6 +166,7 @@ Implementing a Playbook to Manage Storage
        - vgroup: vgweb
        - path: /var/log/httpd
     - ensure that the playbook is dynamic such that it is able to create any new storage resources without itself being modified
+      - this only applies to the volume groups, logical volumes, filesystems, and mounts. This does not apply to partitions
 
 **Task 10**
 
