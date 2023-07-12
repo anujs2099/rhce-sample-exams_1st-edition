@@ -12,7 +12,7 @@ Using Network Roles for Network Management
      - type is ethernet
      - ip address is 192.168.4.231/24
      - zone is external
-   - create the playbook such that the values are derived dynamically where the playbook should be written once and never needed to be modified ever again. Also make use an include statement
+   - create the playbook such that the values are derived dynamically where the playbook should be written once and never needed to be modified ever again. Also make use of an include module
 
 **Task 2**
 
