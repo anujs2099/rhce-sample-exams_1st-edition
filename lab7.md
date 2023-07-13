@@ -35,7 +35,7 @@ Using Ansible to Manage IPv6
 -  Use the inventory file & configuration file from lab1/task2
 -  Write a playbook as follows:
    - runs on ansible2.example.com
-   - create a connection name 'ipv6-conn' for the network interface 'ens224' with ipv6 address 'fc00::202/64', gateway 'fc00::1', dns '2001:4860:4860::8888' 
+   - create a connection name 'ipv6-conn' for the network interface 'ens224' with ipv6 address 'fc00::202/64', gateway 'fc00::1', dns '2001:4860:4860::8888' of type 'ethernet'
 
 **Task 4**
 
