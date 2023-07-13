@@ -43,32 +43,10 @@ Managing Networking
 
 -  Project directory name is task4
 -  Use the inventory file & configuration file from lab1/task2
+-  Verify that two network interfaces are available. If not, create the second interface
 -  Write a playbook as follows:
    - runs on ansible2.example.com
-   - verify that two network interfaces are available
-   - if a second interface is available, the playbook should set it up with network configuration and assign the IP address 192.168.4.30/24 on the interface
-
-
-
-
-
-
-**Task 5**
-
-
-**Task 6**
-
-
-**Task 7**
-
-
-**Task 8**
-
-
-**Task 9**
-
-
-**Task 10**
+   - the playbook should set up the second interface with network configuration and assign the IP address 192.168.4.30/24 to it
 
 
 
