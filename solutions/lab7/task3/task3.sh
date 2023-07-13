@@ -9,6 +9,4 @@ cp ../../lab1/task2/ansible.cfg .
 
 vi task3.yaml
 ansible-doc nmcli | grep EXAMPLES -A3000 | less
-ansible-doc hostname | grep EXAMPLES -A3000 | less
-ansible-doc firewalld | grep EXAMPLES -A3000 | less
 ansible-playbook task3.yaml
