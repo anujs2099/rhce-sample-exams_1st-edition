@@ -16,6 +16,16 @@ Using Network Roles for Network Management
 
 **Task 2**
 
+Understanding Modules for Network Management
+
+-  Project directory name is task2
+-  Use the inventory file & configuration file from lab1/task2
+-  Write a playbook as follows:
+   - runs on ansible2.example.com
+   - create a connection name 'new-conn' for the network interface 'ens224' with ip address '10.0.0.10/24' of type 'ethernet'
+   - set the hostname to ansible2.example.com if not already set
+   - move ens224 to internal zone and enable http service in the firewall configuration
+   - ensure that all changes persist across reboots and take effect immediately
 
 **Task 3** 
 
