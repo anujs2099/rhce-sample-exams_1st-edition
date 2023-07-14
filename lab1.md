@@ -11,6 +11,7 @@ Static Inventory Files
        - ansible1.example.com
      - db
        - ansible2.example.com
+   - add control.example.com ansible master as a seperate host
 -  List all hosts using this inventory file
 -  List all ungrouped hosts using this inventory file
 -  List all hosts using the default inventory file
